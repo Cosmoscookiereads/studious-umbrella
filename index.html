@@ -20,8 +20,8 @@
      </div>
       
      <div> 
-      <p style="color:#9370DB">Welcome Aboord the Dreamy express!</p>
-       <img src="https://cookierun.wiki/w/Milky_Way_Cookie/OvenBreak/Gallery#/media/File:Crob_cutscene_voyage_to_the_world_of_dreams_07.png"/>
+      <p style="color:#9370DB">Welcome Aboard the Dreamy express!</p>
+       <img src="https://cdn.wikimg.net/en/cookierunwiki/images/f/f4/Crob_cutscene_voyage_to_the_world_of_dreams_07.png"/>
   
      </div>
     
@@ -63,13 +63,30 @@
 
        <script>
 
-       var Current,Time = new Date().toLocaleString();
+        function updateTime() {
+       var currentTime = new Date().toLocaleString();
+       var timeText = document.querySelector("#timeElement");
+       timeText.innerHTML = currentTime;
+        }
+         setInterval(updateTime, 1000);
+
        var dd = String(today.getDate()).padStart(2, '0');
        var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
        var yyyy = today.getFullYear();
 
        today = mm + '/' + dd + '/' + yyyy;
        document.write(today);
+
+           <p id="timeElement"
+      style="((YOUR STYLE))">
+      Time
+    </p>
+
+    function updateTime() {
+var currentTime = new Date().LocaleString();
+var timeText = document.querySelector("#timeElement"currentTime",) 
+
+,setInterval,(updateTime,1000) } 
 
        </script>
        <p> Conductor's pocket stopwatch </p>
