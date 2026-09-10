@@ -6,12 +6,10 @@
 </head>
 
     <body style="background-color: #E6E6FA; font-family: 'Comic Sans MS'"> 
-            <h1 style="margin: 4px;">Cosmically divine, gifted by the stars
-        <h1 style =" color:#9370DB">And the Universe said you are love</h1>
-
+            <h1 style="margin: 4px;">Cosmically divine, gifted by the stars <h1 style color:#9370DB">And the Universe said you are love </h1>
 
      <div>
-      <div style="border:#6a627a solid; width:100px height=100px ; border-radius: 1200px">
+      <div style="border:#6a627a solid; width:1000px height=1000px ; border-radius: 1200px">
         <h2 style =" color:rgb(255, 250, 223)"> DreamJelly thoughts</h2>
         <img src="https://64.media.tumblr.com/d6c63d217e4ea4b31608660f53116833/4fc7571dcd617d8d-54/s400x600/73f3027bba55a3bd05f02c117034535c3f4a1194.gifv"/>
         <h2 style ="font-size: small;"> Oooo cart of jelly treats! </h2>
@@ -49,17 +47,21 @@
      </div>
 
      <div> 
-         <h3>Call DreamJelly Cookie!</h3>
+         <h3>DreamJelly Cookie</h3>
+          <p>I love you!</p>
+        <button type="button" onclick="alert('Lets go on an adventure together!')">Call DreamJelly Cookie!</button> 
 
      </div>
 
      <div>
      <p> Banners and notifs for reminders</p>
+      <button type="button" onclick="alert('notifications activated!')">notifications and reminders!</button> 
 
      </div>
 
      <div>
        <p> Clock </p>
+        <button type="button" onclick="alert('Its the big clock!')"> A clock at the station!</button> 
 
    
      </div>
@@ -67,8 +69,47 @@
      <div> 
        <h4>Section for music playlist</h4>
        <p>Oooo what old tech have you found? Wait... is that a CD?!</p>
-        <img src="https://64.media.tumblr.com/ea7b8d568d6b7096dcad3fdb914f8b35/e897e556bedb879b-4f/s2048x3072/4a6d6da4abd74fae4f030ad38873d6147a682b93.pnj" width="170" height="170" alt="Fixed Size Image">
+          <button id="close-image"><img src="https://64.media.tumblr.com/ea7b8d568d6b7096dcad3fdb914f8b35/e897e556bedb879b-4f/s2048x3072/4a6d6da4abd74fae4f030ad38873d6147a682b93.pnj" width="170" height="170" alt="img"></button>
+<button id="close-CSS"></button>
+
+        <img src="https://64.media.tumblr.com/ea7b8d568d6b7096dcad3fdb914f8b35/e897e556bedb879b-4f/s2048x3072/4a6d6da4abd74fae4f030ad38873d6147a682b93.pnj" width="170" height="170" alt="img" id="img">
+        <script type="text/javascript">
+          const img = document.getElementbyId("img")
+          let n = 0 
+          function tick () { 
+            n+= 1
+            img.style.transform='rotate(${n}deg)'
+          }
+          setInternal(tick, 1000 / 60)
+        </script>
+
        <p>Uh so playlist for what music I think Milkyway Cookie would enjoy </p>
+
+       <section>
+
+  <br />
+  <br />
+  <br />
+  <br />
+  <img src="https://64.media.tumblr.com/ea7b8d568d6b7096dcad3fdb914f8b35/e897e556bedb879b-4f/s2048x3072/4a6d6da4abd74fae4f030ad38873d6147a682b93.pnj" width="170" height="170" alt="img">
+</section>
+
+<style>
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+img {
+  animation: spin 5s linear infinite;
+}
+</style>
+
        <img src="https://cookierun.wiki/w/Marshpillow/OvenBreak#/media/File:Marshpillow.png" width="500" height="500" alt="Fixed Size Image">
        <img src="https://cookierun.wiki/w/Marshpillow/OvenBreak#/media/File:Crob_standard_naptime_buddy.png" width="500" height="500" alt="Fixed Size Image">
        
@@ -121,3 +162,6 @@
      <script src="1script.js"></script>
     </body>
 </html>
+
+
+
