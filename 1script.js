@@ -1,4 +1,5 @@
-dragElement(document.getElementById("welcome aboard the dreamy express!"));
+
+dragElement(document.getElementById("welcomeaboardthedreamyexpress!"));
 function dragElement(element) {
   var initialX = 0;
   var initialY = 0;
@@ -32,6 +33,7 @@ function dragElement(element) {
 }
 
 
+
 <div>
        <p> Clock </p>
 
@@ -40,16 +42,11 @@ function dragElement(element) {
        
 
           var Next,Departure = new Date().toLocalString();
-     function updateTime() {
-      var currentTime = new Date().toLocaleString();
-      var timeText = document.querySelector("#timeElement");
-      timeText.innerHTML = currentTime; 
+     function updateTime() { variable } { variable currentTime = new Date().toLocaleString();var timeText = document.querySelector("#timeElement");timeText.innerHTML = currentTime; setInterval(updateTime, 1000);}
 
-    setInterval(updateTime, 1000); }
-
-
+</script>
   
 
 
         
-     </div>
+     </div>}
