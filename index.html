@@ -8,15 +8,142 @@
     <body style="background-color: #E6E6FA; font-family: 'Comic Sans MS'"> 
 
           <!-- Draggable DIV -->
-      <div style="border:#6a627a solid; width:2000px height=800px ; border-radius: 120px">
-     <div id="welcome aboard the dreamy express!" styles="width:2400px height=24 ">
-      <div id="Abooard teh dreamy exppress header">Tickets please!</div> 
+<style>
+          #welcomeaboardthedreamyexpress {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+
+#Aboardthedreamyexppressheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #7044bb;
+  color: #fff;
+}
+</style> 
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {
+  font-family: Comic Sans MS
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* The browser window */
+.container {
+  border: 3px solid #9370DB;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+
+/* Container for columns and the top "toolbar" */
+.row {
+  padding: 12px;
+  background: #7a67cf;
+  border-top-left-radius: 1px;
+  border-top-right-radius: 1px;
+}
+
+/* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+}
+
+.left {
+  width: 15%;
+}
+
+.right {
+  width: 10%;
+}
+
+.middle {
+  width: 75%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Reminder to self to make teh three dots buttonable  */
+.dot {
+  margin-top: 4px;
+  height: 12px;
+  width: 12px;
+  background-color: #9370DB;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* This one is Milkyway cookie's Input www.  */
+input[type=text] {
+  width: 100%;
+  border-radius: 3px;
+  border: none;
+  background-color: #c7bbfa;
+  margin-top: -8px;
+  height: 25px;
+  color: #666;
+  padding: 5px;
+}
+
+/* Three bars (hamburger menu) (( Make it buttonable)) */
+.bar {
+  width: 17px;
+  height: 3px;
+  background-color: #9370DB;
+  margin: 3px 0;
+  display: block;
+}
+
+/* Add picture and ID of Milkyway cookie's Train conductor's Id! ( and of her Uni's Id! :DDD A REF MENTIONED) */
+.content {
+  padding: 10px;
+}
+</style>
+</head>
+<body>
+<!-- Note to self! : This is supposed to be buttons! ( pressable ) -->
+/
+<div class="container">
+  <div class="row">
+    <div class="column left">
+      <span class="dot" style="background:#ffa599;"></span>
+      <span class="dot" style="background:#fce66a;"></span>
+      <span class="dot" style="background:rgb(185, 233, 185);"></span>
+    </div>
+    <div class="column middle">
+      <input type="text" value="http://www.Milkywaycookie.cookie">
+    </div>
+    <div class="column right">
+      <div style="float:right">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+    </div>
+  </div>
+
+  <div class="content">
+<div style="border:#6a627a solid; width:2000px height=800px ; border-radius: 120px">
+     <div id="welcomeaboardthedreamyexpress" styles="width:2400px height=24 ">
+      <div id="Aboardthedreamyexppressheader">Tickets please!</div> 
       <p style="color:#9370DB">Welcome Aboard the Dreamy express!</p>
-       <img src="https://cdn.wikimg.net/en/cookierunwiki/images/f/f4/Crob_cutscene_voyage_to_the_world_of_dreams_07.png "width="1500 height="700" alt="Fixed Size Image"/>
+       <img src="https://cdn.wikimg.net/en/cookierunwiki/images/f/f4/Crob_cutscene_voyage_to_the_world_of_dreams_07.png "width="150 "height="70 alt="Fixed Size Image"/>
         <h1 style="margin: 4px;">Cosmically divine, gifted by the stars <h1 style color:#9370DB">And the Universe said you are love </h1>
      </div>
     
-               <!-- Draggable DIV -->
+               <!-- Note to self! : Draggable DIV -->
      <div>
       <div style="border:#6a627a solid; width:1000px height=1000px ; border-radius: 1200px">
         <h2 style =" color:rgb(255, 250, 223)"> DreamJelly thoughts</h2>
@@ -27,7 +154,7 @@
 
      </div>
 
-               <!-- Draggable DIV -->
+               <!-- Note to self! : Draggable DIV -->
      <div> 
           <img src="https://cdn.wikimg.net/en/cookierunwiki/images/f/ff/Voyage_to_the_world_of_dreams_title_screen.png"/>
      <p>This is what this entire OS is based upon!</p>
@@ -47,7 +174,7 @@
      <div>      
       
       <h3>Section for about me</h3>
-      <h3 style = "color:#8787ff6b)">>
+      <h3 style = "color:#8787ff6b;">>
        <img src="https://64.media.tumblr.com/efac8f49d7c9191fbc073e4cc697a787/4fc7571dcd617d8d-2a/s400x600/ca54ae3329bd6bfc05758c053e62ca676b0d4a10.gifv"/>
          <p> Hi! I'm Chronos and more about me later! </p>
          <button type="button" onclick="alert('About me!')">About me? </button> 
@@ -101,7 +228,7 @@
   <img src="https://64.media.tumblr.com/ea7b8d568d6b7096dcad3fdb914f8b35/e897e556bedb879b-4f/s2048x3072/4a6d6da4abd74fae4f030ad38873d6147a682b93.pnj" width="170" height="170" alt="img">
 </section>
 
- <button onclick="@keyframes spin()">Its a CD.</button> 
+ <button onclick=" spin()">Its a CD.</button> 
  
 
 
@@ -148,6 +275,10 @@
        <p> This page will now have a small section dedicated to THANKING that ONE PERSON who helped me so much in that zoom metting. I cannt thank you enough lamao. Look wow I have already forgotten your username h uh something... </p>
 
      </div>
+  </div>
+</div>
+
+
 
      
     <div>
