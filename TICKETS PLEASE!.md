@@ -1,0 +1,30 @@
+ MilkyWay Cookie Os! ( Includes DreamJelly Cookie too! ) 
+ This is a Os where fans of Milkyway Cookie and DreamJelly Cookie can use to help motivate themselvess a bit more in everyday tasks (on electronics only of course ). 
+ (( Mostly built for people who wanna study but have trouble focusing when their favourite characters or things that interest them aren't involved.))* 
+ 
+ ( Inspired by Cookie run, made with love for cookie run )
+ (( Context : Milkyway Cookie is a cookie run character that was introduced into the hit game Cookie Run Ovenbreak from it's sister game : Cookie Run Kingdom, in the 2025 update Voyage to the World of Dreams! The cookie run 
+ franchise is made by Devsis. Milkyway Cookie is a train conductor for a Dreamy Train that can travel through the world of dreams and memories.  )) 
+ 
+ Includes : 
+ A clock,  
+ A timer!
+ A note pad!  
+ Flashcards!
+ (ONLY LOCALLY) Save files for notes and flashcards!
+A music player!
+A gallery of Milkyway cookie and Dreamjelly cookie!
+Surprise animations..?
+And maybe additional content if my skills allow me to. 
+
+
+=============
+Ramble below: 
+Interactiveness with milkyway cookie at 100 percent is a dream and thus I will do what I can... ( fun fact! this project space was originally supposed to be like my os that was related to my ocs but due to me not fleshing out their stories and asthetics enouugh and revamping them again and again and again I gave in into the hyperfixation scrunchie of my favourite characters )
+
+Hi hi! so originally, I was very lost on what I wanted to do with this and soon after I slowly came to fully understand what I liked doing and following my dreams so I added my hyperfixations into this project hahahhahahahaha No I literally mean it, Maxing her out on the first few days or within hours of getting her in cookie run ovenbreak is like insane for a casual player like me!!
+
+ I mostly wanted to see more things that were solely related to characters I liked so.. as the saying goes : If you can't find it, just make it yourself QWQ SOBBING HARD This is complicated to me, like uh coding in general so I am mostly uh, well uhmm so uh don't expect too much! I am more artistically inclined rather than uh coding and stuff I've barely even scratched the surface of stuff like this yet I am very amazed by all of it! 
+ Coding is like uhh crochet but less doubting that you know how to count and less arm strength.
+
+*aka, I built this FOR ME!!!! IM THE TARGET GROUP OF INTERESTED PEOPLE!!!! SCREECHES- ( At times like this, I AM DYING OF THE LACK OF DREAMJELLY COOKIE AND MILKYWAY COOKIE FANCONTENT. I AM DESPERATE-) 
