@@ -8,6 +8,7 @@
     <body style="background-color: #E6E6FA; font-family: 'Comic Sans MS'"> 
 
           <!-- Draggable DIV -->
+          <!-- First notifcation! Tells you what is this and stuff! Welcomes cookies to Milky Way Os, made by Cosmoscookieread with love. ( Yes this is supposed to motivate mysself. ) -->
 <style>
           #welcomeaboardthedreamyexpress {
   position: absolute;
@@ -25,6 +26,64 @@
   color: #fff;
 }
 </style> 
+
+<body>
+
+<div class="content">
+<div style="border:#6a627a solid; width:1068px height=269px ; border-radius: 120px">
+     <div id="welcomeaboardthedreamyexpress" styles="width:2400px height=24 ">
+      <div id="Aboardthedreamyexppressheader">Tickets please!</div> 
+      <p style="color:#9370DB">Welcome Aboard the Dreamy express!</p>
+       <img src="https://cdn.wikimg.net/en/cookierunwiki/images/f/f4/Crob_cutscene_voyage_to_the_world_of_dreams_07.png "width="1057 "height="600 "alt="Fixed Size Image"/>
+        <h1 style="margin: 4px;">Cosmically divine, gifted by the stars </h1> 
+        <h4 style="color:#9370DB">And the Universe said you are love </h4>
+     </div>
+
+<script>
+//Make the DIV element draggagle:
+dragElement(document.getElementById("welcomeaboardthedreamyexpress"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    /* if present, the header is where you move the DIV from:*/
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    /* otherwise, move the DIV from anywhere inside the DIV:*/
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // get the mouse cursor position at startup:
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    // call a function whenever the cursor moves:
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    // calculate the new cursor position:
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    // set the element's new position:
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    /* stop moving when mouse button is released:*/
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
@@ -75,7 +134,7 @@ body {
   clear: both;
 }
 
-/* Reminder to self to make the three dots buttonable  */
+/* Reminder to self to make teh three dots buttonable  */
 .dot {
   margin-top: 4px;
   height: 12px;
@@ -133,16 +192,7 @@ input[type=text] {
       </div>
     </div>
   </div>
-<!-- First notifcation! Tells you what is this and stuff! Welcomes cookies to Milky Way Os, made by Cosmoscookieread with love. ( Yes this is supposed to motivate mysself. ) -->
-  <div class="content">
-<div style="border:#6a627a solid; width:1068px height=269px ; border-radius: 120px">
-     <div id="welcomeaboardthedreamyexpress" styles="width:2400px height=24 ">
-      <div id="Aboardthedreamyexppressheader">Tickets please!</div> 
-      <p style="color:#9370DB">Welcome Aboard the Dreamy express!</p>
-       <img src="https://cdn.wikimg.net/en/cookierunwiki/images/f/f4/Crob_cutscene_voyage_to_the_world_of_dreams_07.png "width="1057 "height="600 "alt="Fixed Size Image"/>
-        <h1 style="margin: 4px;">Cosmically divine, gifted by the stars </h1> 
-        <h4 style="color:#9370DB">And the Universe said you are love </h4>
-     </div>
+
     
                <!-- Note to self! : Draggable DIV -->
      <div id="DreamJellyCookieWelcomesyou" styles="width:2400px height=24px">
@@ -176,7 +226,7 @@ input[type=text] {
       <img src="https://cdn.wikimg.net/en/cookierunwiki/images/6/6a/Cookie0573_tm01_bg_simple.png"/>
       <!-- Note to self! : This is supposed to be a pop's tab thing. -->
       <img src="https://64.media.tumblr.com/b191f522458ed05a21e7c31321306751/4fc7571dcd617d8d-03/s400x600/ee12464c31f32f95712157e6fc8623a077d51872.gifv"/>
-
+      <img src=""/>
       <img src=""/>
       <!-- Note to self! : This is supposed to be a pop's tab thing. -->
       <img src="https://64.media.tumblr.com/3d449a934b4b6fb43dbff245a2c8d2ed/4fc7571dcd617d8d-64/s400x600/e19c4a6b1f4d006868611b653abab2707ec6f455.gifv"/>
@@ -227,8 +277,6 @@ input[type=text] {
        <p> Clock </p>
 
         <button type="button" onclick="alert('Its the big clock!')"> A clock at the station!</button> 
-        
-        
 
          <!-- Note to self! : Timer goes here. Put a ticket as the picture here. Leadfs to a webtab open, opens to www.DreamscapeTrains.Bake.Dream//Booking-Tickets which changes to Tickets after booking. 
           Add a booking page, BUTTONS!!! and then to tickets then a timer starts. 
@@ -324,14 +372,13 @@ input[type=text] {
 
      
     <div>
-        <p style="color:#9370DB" font-family: Comic Sans MS> Thank you for trying out my OS inspired by one of or rather two of my favourite characters ever!!! </p>
+        <p style="color:#9370DB" font-family: Comic Sans MS > Thank you for trying out my OS inspired by one of or rather two of my favourite characters ever!!! </p>
       <p>Disclaimers and credits : </p>
       <p> I DO NOT OWN DREAMJELLY COOKIE NOR MILKYWAY COOKIE THEY BELONG TO DEVSIS FROM COOKIE RUUN OVENBREAK I JUST REALLYYYYYYYYY REALLLYYYYYY LOVE THEM AND DREAMJELLY COOKIE IS LITERALLY THEY SWEETEST AND MOST SQUISHY AND CUUTEST COOKIE- </p>
       <p>Most images are directly linked to the Cookie Run Wiki.</p>
       <p>Pages linked </p>
     </div>  
      <script src="1script.js"></script>
-     
     </body>
 </html>
 
