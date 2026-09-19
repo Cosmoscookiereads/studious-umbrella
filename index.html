@@ -395,6 +395,20 @@ DreamJellyCookieWelcomesyou {
      
      <div id="SPPECIALTHANKS" styles="width:2400px height 24px"> 
        <h7> SPECIAL THANKS SECTION (like every good game or thing does ) </h7>
+       <button onclick="Thankyouandgoodbye()">Thank you to my best friends and that one person who hleped me in that one zoom meeting!<button>>
+
+        <div id="Thankyouforvisiting">And thank you too for visiting!</div>
+
+        <script>
+        function Thankyouandgoodbye() {
+          var x = document.getElementById("Thank you to my best friends and that one person who hleped me in that one zoom meeting!"); 
+          if (x.innerHTML === "And thank you too for visiting!") {
+            x.innerHTML = "Swapped text!";
+          } else { 
+           x.innerHTML = "And thank you too for visiting!";
+          }  
+        }  
+        </script>
         <!-- Note to self! : Add pictures and LAST GOODBYE MUSIC PLAYS BAM BAMMM DUMMBDUMMAMMMM BUUDAHGUNMMMNMMBAMMM -->
        <button type="button" onclick="alert('And thank you too for visiting!')"> A sign? </button> 
        <p> This page will now have a small section dedicated to THANKING that ONE PERSON who helped me so much in that zoom metting. I cannt thank you enough lamao. Look wow I have already forgotten your username h uh something... </p>
