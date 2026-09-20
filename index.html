@@ -291,16 +291,7 @@ function dragElement(elmnt) {
     
              
 
-               <!-- Draggable DIV -->
-     <div id="Aboutme" styles="width:2400px height 24px">      
-      <!-- Note to self! : This is suupposed to be at the end! LIKE A SECRET -->
-      <h3>Section for about me</h3>
-      <h3 style = "color:#8787ff6b;">
-       <img src="https://64.media.tumblr.com/efac8f49d7c9191fbc073e4cc697a787/4fc7571dcd617d8d-2a/s400x600/ca54ae3329bd6bfc05758c053e62ca676b0d4a10.gifv"/>
-         <p> Hi! I'm Chronos and more about me later! </p>
-         <button type="button" onclick="alert('About me!')">About me? </button> 
 
-     </div>
 
                <!-- Draggable DIV : Banners and Reminders galore!-->
      <div id="Bannersnotifandreminders" styles="width:2400px height 24px">
@@ -435,29 +426,36 @@ function dragElement(elmnt) {
 
 <!-- Note to self! : REMEMBER TO REMOVE THOSE!!!! -->
      </div>
+                 <!-- Draggable DIV -->
+     <div id="Aboutme" styles="width:2400px height 24px">      
+      <!-- Note to self! : This is suupposed to be at the end! LIKE A SECRET -->
+      <h3>Section for about me</h3>
+      <h3 style = "color:#8787ff6b;">
+       <img src="https://64.media.tumblr.com/efac8f49d7c9191fbc073e4cc697a787/4fc7571dcd617d8d-2a/s400x600/ca54ae3329bd6bfc05758c053e62ca676b0d4a10.gifv"/>
+         <p> Hi! I'm Chronos and more about me later! </p>
+         <button type="button" onclick="alert('About me!')">About me? </button> 
 
-     
+     </div>
+
+     <!-- Note to self! : Special Thanks divider DIV. -->
      <div id="SPPECIALTHANKS" styles="width:2400px height 24px"> 
        <h7> SPECIAL THANKS SECTION (like every good game or thing does ) </h7>
-<p><button onclick="Thankyouandgoodbye()">Thank you to my best friends and that one person who hleped me in that one zoom meeting!</button></p>
+<p><button onclick="ThankyouandgoodbyeFunction()">Click Me</button></p>
 
-<div id="Thankyouforvisiting">And thank you too for visiting!</div>
+<div id="SpecialThanksDIV">Thank you to my best friends and that one person who helped me in that one zoom meeting, and to everyone at Stardance Team!</div>
 
 <script>
-function myFunction() {
-  var x = document.getElementById("Thank you to my best friends and that one person who hleped me in that one zoom meeting!");
-  if (x.innerHTML === "And thank you too for visiting!") {
-    x.innerHTML = "Swapped text!";
-  } else {
+function ThankyouandgoodbyeFunction() {
+  var x = document.getElementById("SpecialThanksDIV");
+  if (x.innerHTML === "Thank you to my best friends and that one person who helped me in that one zoom meeting, and to everyone at Stardance Team!") {
     x.innerHTML = "And thank you too for visiting!";
+  } else {
+    x.innerHTML = "Thank you to my best friends and that one person who helped me in that one zoom meeting, and to everyone at Stardance Team!";
   }
 }
+</script>
 
-        </script>
         <!-- Note to self! : Add pictures and LAST GOODBYE MUSIC PLAYS BAM BAMMM DUMMBDUMMAMMMM BUUDAHGUNMMMNMMBAMMM -->
-       <button type="button" onclick="alert('And thank you too for visiting!')"> A sign? </button> 
-       <p> This page will now have a small section dedicated to THANKING that ONE PERSON who helped me so much in that zoom metting. I cannt thank you enough lamao. Look wow I have already forgotten your username h uh something... </p>
-
      </div>
   </div>
 </div>
