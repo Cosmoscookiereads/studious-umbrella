@@ -29,6 +29,31 @@
 </style> 
 
 <body>
+  <body onload="startTime()">
+
+<h2>Stardust platform current time : </h2>
+<div id="txt"></div>
+
+<script>
+function startTime() {
+  const today = new Date();
+  let h = today.getHours();
+  let m = today.getMinutes();
+  let s = today.getSeconds();
+  m = checkTime(m);
+  s = checkTime(s);
+  document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+  setTimeout(startTime, 1000);
+}
+
+function checkTime(i) {
+  if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+  return i;
+}
+</script>
+
+     </div>
+
 
 <div class="content">
 <div style="border:#6a627a solid; width:1068px height=269px ; border-radius: 120px">
@@ -164,15 +189,17 @@ input[type=text] {
       <!-- Note to self! : This is supposed to be ( pressable ) aka there is supposed to be a button here. -->
       
         <!-- Note to self! : Add DreamJelly cookkie sprite and name and talkcard thing here. Make Dreamjelly first foorm then pooof! 4th form! -->
-         <img src="https://64.media.tumblr.com/d6c63d217e4ea4b31608660f53116833/4fc7571dcd617d8d-54/s400x600/73f3027bba55a3bd05f02c117034535c3f4a1194.gifv" width="1068px" height="70" alt="Fixed Size Image"/>
+         <img src="https://64.media.tumblr.com/e646b71c0c4796bf8207c680f67eb706/df3a0a6a204983dc-da/s2048x3072/a192caf751bc2c8a5d131dc30f36f5ff3bc1026f.pnj"/>
         <img src="https://cdn.wikimg.net/en/cookierunwiki/images/6/6c/Crob_dreamjelly_smile.png"/> 
      <div style="border:#6a627a solid; width:1600px height=200px ; border-radius: 1200px">
         <h2 style =" color:rgb(255, 250, 223)"> DreamJelly Cookie : I wanna share some Rainbow bearroll jellies with you! </h2>
       <img src="https://64.media.tumblr.com/325429e1c5abc422dad88ca755ad1ffe/6d941bf247f64aa2-b9/s2048x3072/bb4014273fd0bac7d46e98dfed406c1205ca1485.pnj"/>
 
       <!-- Note to self! : This is supposed to be able to roll in a line. Then make it loop. -->
-       <!-- Note to self! : Make the Bearjellies disappear as you click them. Set to a set number..) -->
-        <!-- Note to self! : bearrjellies all disappear when you eat them all up! -->
+      <!-- Note to self! : Make the Bearjellies disappear as you click them. Set to a set number..) -->
+      <!-- Note to self! : bearrjellies all disappear when you eat them all up! -->
+      
+      <img src="https://64.media.tumblr.com/538cd74a1a7e1d710d375d5a4ca0b6c5/df3a0a6a204983dc-e5/s2048x3072/6cba5872c703d59859410e430638382e7c03bc4e.pnj"/>
      </div>
 
     </div>
@@ -331,8 +358,7 @@ function dragElement(elmnt) {
       <img src="https://64.media.tumblr.com/25b34f8ac1ac2526dcf58b8aba9810f3/6d941bf247f64aa2-e4/s2048x3072/f026fc8e1bf17f6330b201a7b3705442ab6448e8.pnj"/>
       <img src="https://64.media.tumblr.com/99af9ec75b4197c20f5b243a6bc61d35/6d941bf247f64aa2-f4/s2048x3072/1119fc91e07c23ad5796d86173ff70e26195be1c.pnj"/>
       <img src="https://64.media.tumblr.com/58e4dcbfce5a34e6886f3f8f0911ed40/aa9940ffa48472d9-9e/s2048x3072/ba7e026268b71284d7e98e1904e0ab792d3efd23.pnj"/>
-      <img src="https://64.media.tumblr.com/e646b71c0c4796bf8207c680f67eb706/df3a0a6a204983dc-da/s2048x3072/a192caf751bc2c8a5d131dc30f36f5ff3bc1026f.pnj"/>
-      <img src="https://64.media.tumblr.com/538cd74a1a7e1d710d375d5a4ca0b6c5/df3a0a6a204983dc-e5/s2048x3072/6cba5872c703d59859410e430638382e7c03bc4e.pnj"/>
+      <img src="https://64.media.tumblr.com/d6c63d217e4ea4b31608660f53116833/4fc7571dcd617d8d-54/s400x600/73f3027bba55a3bd05f02c117034535c3f4a1194.gifv" width="1068px" height="70" alt="Fixed Size Image"/>
       <img src=""/>
       <img src=""/>
       <!-- Note to self! : This is supposed to be a pop's tab thing. -->
