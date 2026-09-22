@@ -281,16 +281,22 @@ function dragElement(elmnt) {
 
      </div>
 
+
                <!-- Draggable DIV -->
      <div id="Musicplayermybeloved" styles="width:2400px height 24px"> 
        <h4>Section for music playlist</h4>
+        <!-- Note to self! : Milkyway cookie appears! With img and textbox! -->
+        <p>DreamJelly Cookie : Sleepy time!! I hope to dream of happy dreams with you!</p>
+
         <!-- Note to self! : YES! This is very much inspired by the musicbox in crob!-->
        
         <!-- Note to self! : DreamJelly cookie popup <3 add her image and text that is changeabel once clicked.  -->
-       <p>Dreamjelly Cookie : Oooo what old tech have you found? Wait... is that a CD?!</p>
        <button onclick="typeWriter()">Milkyway Cookie CD : </button>
+       <button onclick="typeWriter()">DreamJelly Cookie CD : </button>
 
 <p id="MilkywayCookietextwhenpressonCD"></p>
+
+
 
 <script>
 var i = 0;
@@ -305,8 +311,26 @@ function typeWriter() {
   }
 }
 </script>
+
+<p id="DreamJellyCookietextwhenpressonCD"></p>
+
+<script>
+var i = 0;
+var txt = 'Dreamjelly Cookie : Oooo what old tech have you found? Wait... is that a CD?!';
+var speed = 50;
+
+function typeWriter() {
+  if (i < txt.length) {
+    document.getElementById("DreamJellyCookietextwhenpressonCD").innerHTML += txt.charAt(i);
+    i++;
+    setTimeout(typeWriter, speed);
+  }
+}
+</script>
+
+
           <button id="close-image"><img src="https://64.media.tumblr.com/ea7b8d568d6b7096dcad3fdb914f8b35/e897e556bedb879b-4f/s2048x3072/4a6d6da4abd74fae4f030ad38873d6147a682b93.pnj" width="170" height="170" alt="img"></button>
-<button id="close-CSS"></button>
+
           <!-- Note to self! : Make it clickable-->
         <img src="https://64.media.tumblr.com/ea7b8d568d6b7096dcad3fdb914f8b35/e897e556bedb879b-4f/s2048x3072/4a6d6da4abd74fae4f030ad38873d6147a682b93.pnj" width="170" height="170" alt="img" id="img">
 
@@ -317,21 +341,15 @@ function typeWriter() {
        <body class="adder">
   <div id="CDcontentplayer">
 
-  </code>
-</body>
+  <img src="https://64.media.tumblr.com/ea7b8d568d6b7096dcad3fdb914f8b35/e897e556bedb879b-4f/s2048x3072/4a6d6da4abd74fae4f030ad38873d6147a682b93.pnj" width="500" height="500" alt="Fixed Size Image">
 
-  <img src="https://64.media.tumblr.com/ea7b8d568d6b7096dcad3fdb914f8b35/e897e556bedb879b-4f/s2048x3072/4a6d6da4abd74fae4f030ad38873d6147a682b93.pnj" width="170" height="170" alt="img">
-</section>
 
  <button onclick=" spin()">Its a CD.</button>
  <!-- Note to self! : Make it clickable then make it spin, tehn stopp when pressed again, also make like a line appear, LIKE YOUTUBE AUUGHHHH --> 
 
-       <img src="https://cookierun.wiki/w/Marshpillow/OvenBreak#/media/File:Marshpillow.png" width="500" height="500" alt="Fixed Size Image">
-       <img src="https://cookierun.wiki/w/Marshpillow/OvenBreak#/media/File:Crob_standard_naptime_buddy.png" width="500" height="500" alt="Fixed Size Image">
+       <img src="https://cookierun.wiki/w/Marshpillow/OvenBreak#/media/File:Marshpillow.png" >
+       <img src="https://cookierun.wiki/w/Marshpillow/OvenBreak#/media/File:Crob_standard_naptime_buddy.png">
        
- <!-- Note to self! : Milkyway cookie appears! With img and textbox! -->
-        <p>DreamJelly Cookie : Sleepy time!! I hope to dream of happy dreams with you!</p>
-
      </div>
 
       <h5>Section for notes </h5> 
