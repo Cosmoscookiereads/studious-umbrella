@@ -222,66 +222,12 @@ DreamJellyCookieWelcomesyou {
 }
 </style> 
 
-<script>
-//Make the DIV element draggagle:
-dragElement(document.getElementById("DreamJellyCookieWelcomesyou"));
 
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-  } else {
-    elmnt.onmousedown = dragMouseDown;
-  }
-
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    document.onmousemove = elementDrag;
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
-
-  function closeDragElement() {
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
-</script>
 
 
                                                            <!-- DIVIDER OF COMPLETENESS -->
 
 <p>clock placement has been removed for my sanity.</p>
-
-<!-- DIVIDER OF COMPLETENESS -->
-                <!-- Draggable DIV : Banners and Reminders galore!-->
-     <div id="Bannersnotifandreminders" styles="width:2400px height 24px">
-     <p> Banners and notifs for reminders</p>
-     <button type="button" onclick="alert('Hydro checks activated!!')"> Hydration!!!!</buttton>
-     <button type="button" onclick="alert('hydro no no I got this Deactivated')">Hydration!!!!!</button>
-     <button type="button" onclick="alert('Streach checks activated!!')">STREACH THOSE BONES</button>
-     <button type="button" onclick="alert('Streach checks Deactivated!!')">STREACH THOSE BONES</button>
-
-     <!-- Note to self! : Add banner for notifs ( use Aurora candy because they are scaryyyyyyyyy ) -->
-      <button type="button" onclick="alert('notifications activated!')">notifications and reminders!</button> 
-      <button type="button" onclick="alert('notifications deactivated!')">notifications and reminders off!</button>
-
-     </div>
-
-
                <!-- Draggable DIV -->
      <div id="Musicplayermybeloved" styles="width:2400px height 24px"> 
        <h4>Section for music playlist</h4>
@@ -350,6 +296,90 @@ function typeWriter() {
        <img src="https://cookierun.wiki/w/Marshpillow/OvenBreak#/media/File:Marshpillow.png" >
        <img src="https://cookierun.wiki/w/Marshpillow/OvenBreak#/media/File:Crob_standard_naptime_buddy.png">
        
+     </div>
+     <!-- DIVIDER OF COMPLETENESS -->
+                <!-- Draggable DIV : Banners and Reminders galore!-->
+     <div id="Bannersnotifandreminders" styles="width:2400px height 24px">
+     <p> Banners and notifs for reminders</p>
+     <style>
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 60px;
+  height: 34px;
+}
+
+.switch input { 
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 26px;
+  width: 26px;
+  left: 4px;
+  bottom: 4px;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+input:checked + .slider {
+  background-color: #5921f3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #5921f3;
+}
+
+input:checked + .slider:before {
+  -webkit-transform: translateX(26px);
+  -ms-transform: translateX(26px);
+  transform: translateX(26px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+</style>
+</head>
+<body>
+     <button type="button" onclick="alert('Hydro checks activated!!')"> Hydration!!!!</buttton>
+     <button type="button" onclick="alert('hydro no no I got this Deactivated')">Hydration!!!!!</button>
+<label class="switch">
+  <input type="checkbox">
+  <span class="slider round"></span>
+</label>Hydration reminders!
+
+     <button type="button" onclick="alert('Streach checks activated!!')">STREACH THOSE BONES</button>
+     <button type="button" onclick="alert('Streach checks Deactivated!!')">STREACH THOSE BONES</button>
+<label class="switch">
+  <input type="checkbox" checked>
+  <span class="slider round"></span>
+</label>Stretching reminders!
+
+     <!-- Note to self! : Add banner for notifs ( use Aurora candy because they are scaryyyyyyyyy ) -->
+
      </div>
 
       <h5>Section for notes </h5> 
