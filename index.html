@@ -127,16 +127,15 @@ body {
 }
 
 /* This one is Milkyway cookie's Input www.  */
-input[type=text] {
-  width: 100%;
+input[type=text] {www.cookie.StardustExpressway.Dreamland.cr
+  width: 100px;
   border-radius: 3px;
   border: none;
   background-color: #c7bbfa;
   margin-top: -8px;
   height: 25px;
   color: #666;
-  padding: 5px;
-}
+  padding: 5px;}
 
 /* Three bars (hamburger menu) (( Make it buttonable)) */
 .bar {
@@ -322,7 +321,7 @@ function typeWriter() {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ccc;
+  background-color: #dbb9ff;
   -webkit-transition: .4s;
   transition: .4s;
 }
@@ -340,11 +339,11 @@ function typeWriter() {
 }
 
 input:checked + .slider {
-  background-color: #5921f3;
+  background-color: #432fff;
 }
 
 input:focus + .slider {
-  box-shadow: 0 0 1px #5921f3;
+  box-shadow: 0 0 1px #432fff;
 }
 
 input:checked + .slider:before {
@@ -362,21 +361,44 @@ input:checked + .slider:before {
   border-radius: 50%;
 }
 </style>
-</head>
-<body>
-     <button type="button" onclick="alert('Hydro checks activated!!')"> Hydration!!!!</buttton>
-     <button type="button" onclick="alert('hydro no no I got this Deactivated')">Hydration!!!!!</button>
-<label class="switch">
-  <input type="checkbox">
-  <span class="slider round"></span>
-</label>Hydration reminders!
+    <label class="switch"> 
+      <input type="checkbox" id="hydrotoggle"> 
+      <span class="slider round"></span>
+    </label> Hydration reminders!
+          <div class="text" id="hydrotext">Hydration reminders!: Deactivated!</div> 
 
-     <button type="button" onclick="alert('Streach checks activated!!')">STREACH THOSE BONES</button>
-     <button type="button" onclick="alert('Streach checks Deactivated!!')">STREACH THOSE BONES</button>
-<label class="switch">
-  <input type="checkbox" checked>
-  <span class="slider round"></span>
-</label>Stretching reminders!
+
+<script>
+    const toggle = document.getElementById('hydrotoggle'); 
+    const text = document.getElementById('hydrotext'); 
+     
+    toggle.addEventListener('change', () => { 
+      if (toggle.checked) { 
+        text.textContent = 'Hydration reminders!: Deactivated!'; 
+      } else { 
+        text.textContent = 'Hydration reminders!: Activated!'; 
+      } 
+    }); 
+</script>
+
+    <label class="switch"> 
+      <input type="checkbox" id="streachtoggle"> 
+      <span class="slider round"></span>
+    </label> Streaching reminders!
+          <div class="text" id="streachtext">Streach reminders!: Deactivated!</div> 
+
+<script>
+    const toggle = document.getElementById('streachtoggle'); 
+    const text = document.getElementById('streachtext'); 
+     
+    toggle.addEventListener('change', () => { 
+      if (toggle.checked) { 
+        text.textContent = 'Streach reminders!: Deactivated!'; 
+      } else { 
+        text.textContent = 'Streach reminders!: Activated!'; 
+      } 
+    }); 
+</script>
 
      <!-- Note to self! : Add banner for notifs ( use Aurora candy because they are scaryyyyyyyyy ) -->
 
