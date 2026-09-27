@@ -8,7 +8,7 @@
 
     <body style="background-color: #E6E6FA; font-family: 'Comic Sans MS'"> 
 
-
+ <!-- Oh digital clock you're the only clock that behaavees -->
 <style>
           #Stardustplatformtime {
   position: absolute;
@@ -57,10 +57,13 @@
   background-color: #7044bb;
   color: #fff;
 }
+
 </style> 
+
 
 <div class="content">
 <div style="border:#6a627a solid; width:1068px height=269px ; border-radius: 120px">
+  <p style="cursor: pointer" id="welcomeaboardthedreamyexpressclosebutton"> X </p>
      <div id="welcomeaboardthedreamyexpress" styles="width:2400px height=24 ">
       <div id="Aboardthedreamyexppressheader">Tickets please!</div> 
       <!-- Note to self! : This is supposed to be ( pressable ) aka there is supposed to be a button here. -->
@@ -189,6 +192,7 @@ input[type=text] {www.cookie.StardustExpressway.Dreamland.cr
 </style>
 
      <div id="DreamJellyCookieWelcomesyou" styles="width:2400px height=24px">
+     
       <!-- Note to self! : This is supposed to be ( pressable ) aka there is supposed to be a button here. -->
       
         <!-- Note to self! : Add DreamJelly cookkie sprite and name and talkcard thing here. Make Dreamjelly first foorm then pooof! 4th form! -->
@@ -231,113 +235,10 @@ DreamJellyCookieWelcomesyou {
                                                            <!-- DIVIDER OF COMPLETENESS -->
 
 <div>
+<p>Analog clock placement has been REMOVED ONCE AGAIN for my sanity</p>
 
-
-<p>clock placement has been added despite my sanity </p>
-    <style>
-        body {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            height: 100vh;
-            background: #f0f0f0;
-            margin: 0;
-        }
-        .clock {
-            width: 300px;
-            height: 300px;
-            border: 50px solid #E4B851;
-            border-radius: 50%;
-            position: relative;
-            padding: 20px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-            background: #FAF4B6;
-        }
-        .clock-face {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            transform: translateY(-3px); 
-        }
-        .hand {
-            width: 50%;
-            background: #2D479E;
-            position: absolute;
-            top: 50%;
-            transform-origin: 100%;
-            transform: rotate(90deg);
-            transition: all 0.05s;
-            transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
-        }
-        .hour-hand { height: 6px; background: #2B479D; }
-        .minute-hand { height: 4px; }
-        .second-hand { height: 2px; background: #2B479D; }
-        .number {
-            position: absolute;
-            font-size: 24px;
-            transform: translate(-50%, -50%);
-        }
-        .number1  { top: 20%; left: 85%; }
-        .number2  { top: 35%; left: 92%; }
-        .number3  { top: 50%; left: 97%; }
-        .number4  { top: 65%; left: 92%; }
-        .number5  { top: 80%; left: 85%; }
-        .number6  { top: 85%; left: 50%; }
-        .number7  { top: 80%; left: 15%; }
-        .number8  { top: 65%; left: 8%; }
-        .number9  { top: 50%; left: 3%; }
-        .number10 { top: 35%; left: 8%; }
-        .number11 { top: 20%; left: 15%; }
-        .number12 { top: 15%; left: 50%; }
-    </style>
-    <style>
-.circle {
-  height: 50px;
-  width: 50px;
-  background-color: #2D479E;
-  border-radius: 50%;
-}
-</style>
-    <div class="clock">
-        <div class="clock-face">
-            <div class="number number1">1</div>
-            <div class="number number2">2</div>
-            <div class="number number3">3</div>
-            <div class="number number4">4</div>
-            <div class="number number5">5</div>
-            <div class="number number6">6</div>
-            <div class="number number7">7</div>
-            <div class="number number8">8</div>
-            <div class="number number9">9</div>
-            <div class="number number10">10</div>
-            <div class="number number11">11</div>
-            <div class="number number12">12</div>
-            <div class="hand hour-hand" id="hour-hand"></div>
-            <div class="hand minute-hand" id="minute-hand"></div>
-            <div class="hand second-hand" id="second-hand"></div>
-            
-        </div>
-        <div class="circle"></div>
-    </div>
-    <script>
-        function setClock() {
-            const now = new Date();
-            const seconds = now.getSeconds();
-            const minutes = now.getMinutes();
-            const hours = now.getHours();
-            const secondDeg = ((seconds / 60) * 360) + 90;
-            const minuteDeg = ((minutes / 60) * 360) + 90;
-            const hourDeg = ((hours / 12) * 360) + 90;
-
-            document.getElementById("second-hand").style.transform = `rotate(${secondDeg}deg)`;
-            document.getElementById("minute-hand").style.transform = `rotate(${minuteDeg}deg)`;
-            document.getElementById("hour-hand").style.transform = `rotate(${hourDeg}deg)`;
-        }
-
-        setInterval(setClock, 1000);
-        setClock();
-    </script>
 </div>
+
 
 
                <!-- Draggable DIV -->
@@ -354,9 +255,8 @@ DreamJellyCookieWelcomesyou {
 
 
 <p id="MilkywayCookietextwhenpressonCD"></p>
-
-
-
+<!-- Note to self! : This is a sleepy/ relaxing playlist!  -->
+ <!-- Note to self! : Milkyway cookie popup <3 add her image and text that is changeable when clicked,also only happens when you press on her CD  -->
 <script>
 var i = 0;
 var txt = 'Milkyway Cookie: *Yawns* phew, I think this calls for a nap! ';
@@ -372,6 +272,7 @@ function typeWriter() {
 </script>
 
 <p id="DreamJellyCookietextwhenpressonCD"></p>
+<!-- Note to self! : DreamJelly cookie popup <3 add her image and text that is changeabel once clicked, also this happpens when you press on her CD  -->
 
 <script>
 var i = 0;
@@ -942,7 +843,9 @@ input:checked + .slider:before {
 
      </div>
 
-      <h5>Section for notes </h5> 
+     <!-- Note to self! : Draggable DIV -->
+    <div> 
+             <h5>Section for notes </h5> 
      <div id="Notesandflashcardsgalore" styles="width:2400px height 24px">
 <!-- Note to self! : 5 options for notes : LIGHT violet, cream white ( I think thats it...), dark grrey and black or white.  -->
        <p>Notes</p>
@@ -950,8 +853,12 @@ input:checked + .slider:before {
       <!-- Note to self! : 3 tabs, notes and flashcards that are interchangeable, tehn 3rd tab leads to saved writing! ( Add disclaimer that says notes can be saved and 
        are saved locally ONLY!!! I DO NOTTT SAVE ANYTHING! 
        Uhhh google how to make notes and files and flashcarrds save locazally ) -->
+       <p> Files </p>
+       <p> Flashcards</p>
       
      </div>
+    </div>
+
 
                     <!-- Note to self! : Draggable DIV -->
     <div id="ARTWORKSHOWCASECUTENESSATMAX" styles="width:2400px height 24px"> 
@@ -974,8 +881,10 @@ input:checked + .slider:before {
 </style> 
 
        <p>Gallery of Milkyway cookie </p>
+       <!-- Tab 1.  -->
 
        <p>Gallery of DreamJelly cookie </p>
+       <!-- Tab 2.  -->
        
        <!-- Note to self! : Slef indeugent PEAK Also make the pages a tab then either scrollable or flippable-->
 
@@ -991,11 +900,12 @@ input:checked + .slider:before {
       <img src="https://64.media.tumblr.com/efac8f49d7c9191fbc073e4cc697a787/4fc7571dcd617d8d-2a/s400x600/ca54ae3329bd6bfc05758c053e62ca676b0d4a10.gifv"/>
       <!-- Note to self! : Milkyway cookie's background -->
       <img src="https://cdn.wikimg.net/en/cookierunwiki/images/4/4e/Ui_cookie0573_background.png"/>
-      <!-- Note to self! : This is supposed to be a pop's tab thing. -->
-      <img src="https://64.media.tumblr.com/ddcbafbbcb083003b376f4192675b22c/4fc7571dcd617d8d-a8/s400x600/9fedd2ee729f32e070aa84a6fc65967ba8183f6b.gifv"/>
-      <!-- Note to self! : One of DreamJelly cookie's background -->
+            <!-- Note to self! : One of DreamJelly cookie's background -->
       <img src="https://cdn.wikimg.net/en/cookierunwiki/images/6/6a/Cookie0573_tm01_bg_simple.png"/>
-      <!-- Note to self! : This is supposed to be a pop's tab thing. -->
+      <!-- Note to self! : This is supposed to be a pop's tab thing. aka draggable div -->
+      <img src="https://64.media.tumblr.com/ddcbafbbcb083003b376f4192675b22c/4fc7571dcd617d8d-a8/s400x600/9fedd2ee729f32e070aa84a6fc65967ba8183f6b.gifv"/>
+
+      <!-- Note to self! : This is supposed to be a pop's tab thing.aka Draggable div -->
       <img src="https://64.media.tumblr.com/b191f522458ed05a21e7c31321306751/4fc7571dcd617d8d-03/s400x600/ee12464c31f32f95712157e6fc8623a077d51872.gifv"/>
                           <!-- Note to self! : Draggable DIV -->
       <img src="https://64.media.tumblr.com/325429e1c5abc422dad88ca755ad1ffe/6d941bf247f64aa2-b9/s2048x3072/bb4014273fd0bac7d46e98dfed406c1205ca1485.pnj"/>
@@ -1009,6 +919,15 @@ input:checked + .slider:before {
       <img src="https://64.media.tumblr.com/d6c63d217e4ea4b31608660f53116833/4fc7571dcd617d8d-54/s400x600/73f3027bba55a3bd05f02c117034535c3f4a1194.gifv"/>
       <img src=""/>
       <img src=""/>
+            <img src=""/>
+      <img src=""/>
+            <img src=""/>
+      <img src=""/>
+            <img src=""/>
+      <img src=""/>
+            <img src=""/>
+      <img src=""/>
+
       <!-- Note to self! : This is supposed to be a pop's tab thing. -->
       <img src="https://64.media.tumblr.com/3d449a934b4b6fb43dbff245a2c8d2ed/4fc7571dcd617d8d-64/s400x600/e19c4a6b1f4d006868611b653abab2707ec6f455.gifv"/>
 
@@ -1026,15 +945,18 @@ input:checked + .slider:before {
          <h4> Why make this Os based on Milkyway Cookie?</h4>
          <p> I really love Milkyway Cookie since I saw her in her first release!! Afterwards, when I stopped playing Cookiee Run Kingdom as much I was estatic that she was coming too Ovenbreak! Actually, there are many many fans of Milkyway Cookie and DreamJelly Cookie! However there has been a lack in fanmade content for a while, so I wanted to make something for them both as a loveletter to them and to also thank the team at Devsis Ovenbreak department specicfically for making them both in Cookie Run Ovenbreak!</p>
          <p>Links to my socials and other stuff! : </p>
+         <p> QNA : Why did you make this ? I started to make this as a love letter to show my apppriciaton to Milkyway Cookie and DreamJelly Cookie </p>
          <p>Tumblr</p>
-         <p>Youtube</p>
-         <p>Twitch</p>
+         <!-- Note to self! : Add url to main tumblr on a picture then ttap into wither words oor piicturee. -->
+
          <p>My personal Website</p>
+         <!-- Note to self! : link to personal website like add link onto teh words  -->
 
 
      </div>
 
      <!-- Note to self! : Special Thanks divider DIV. -->
+      <!-- Note to self! : Draggable DIV That is also a popout. -->
      <div id="SPPECIALTHANKS" styles="width:2400px height 24px"> 
        <h7> SPECIAL THANKS SECTION (like every good game or thing does ) </h7>
 <p><button onclick="ThankyouandgoodbyeFunction()">Click Me</button></p>
@@ -1045,7 +967,7 @@ input:checked + .slider:before {
 function ThankyouandgoodbyeFunction() {
   var x = document.getElementById("SpecialThanksDIV");
   if (x.innerHTML === "Thank you to my best friends and that one person who helped me in that one zoom meeting, and to everyone at Stardance Team!") {
-    x.innerHTML = "And thank you too for visiting!";
+    x.innerHTML = "And thank you too! For visiting my little Os site haha!";
   } else {
     x.innerHTML = "Thank you to my best friends and that one person who helped me in that one zoom meeting, and to everyone at Stardance Team!";
   }
@@ -1053,6 +975,7 @@ function ThankyouandgoodbyeFunction() {
 </script>
 
         <!-- Note to self! : Add pictures and LAST GOODBYE MUSIC PLAYS BAM BAMMM DUMMBDUMMAMMMM BUUDAHGUNMMMNMMBAMMM -->
+         <!-- Note to self! : AAdd pictures of my friends in draawings, stardusters from teh Stardance Team, and teh one person who helped me tho I forgott tehriusername lamao  -->
      </div>
   </div>
 </div>
@@ -1065,6 +988,7 @@ function ThankyouandgoodbyeFunction() {
       <p>Pages linked </p>
     </div>  
      <script src="1script.js"></script>
+     <style src="2style.cs"></style>
      
     </body>
 </html>
