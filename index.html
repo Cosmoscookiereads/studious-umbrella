@@ -6,7 +6,25 @@
 
 </head>
 
-    <body style="background-color: #E6E6FA; font-family: 'Comic Sans MS'"> 
+    <body style="background-color: #E6E6FA;background-image:https://cdn.wikimg.net/en/cookierunwiki/images/d/d0/Crob_lobby_fantastical_stardust_platform.png ; background-size: cover ;  font-family: Noto sans kr"> 
+
+ <!-- Top bar, sky's the limit here to the world of dreams!!!'-->
+  <div style="display: flex; justify-content: space-evenly">
+    <p> Milkyway Cookie Os! </p>
+
+    <p style="margin-left: 16px; background-color: #4c44bb; padding: 4px 12px; border-radius: 16px;">
+      Welcome conductor. Remember to stay toasty, dreamy and crispy!
+    </p>
+
+     <p
+          style="margin-right: 16px; background-color: rgba(256, 256, 256, 0.125); padding: 4px 12px; border-radius: 16px;">
+          Notifications 
+           <!-- That is a placeholder until I can find something better...'-->
+     </p>
+
+
+  </div>
+
 
  <!-- Oh digital clock you're the only clock that behaavees -->
 <style>
@@ -27,7 +45,6 @@
 }
 </style> 
 
-<body>
 
  <!-- ONLY somewhat Draggable DIV like its a popout after you click on the non digital clock -->
   <body onload="startTime()">
@@ -35,6 +52,20 @@
 <div id="Stardustplatformtime" styles="width:2400px height=24 ">
 <div id="Movethestardustplatformtimedigital">Stardust platform current time : </div> 
     <time id="current-time"></time>
+  <script>
+            function updateTime() {
+            const now = new Date();
+            const timeElement = document.getElementById('current-time');
+            const options = { weekday: 'long', year: 'numeric', month: 'long', day: 'numeric' };
+            timeElement.dateTime = now.toISOString();
+            timeElement.innerHTML = `Today is: ${now.toLocaleDateString(undefined, options)}, 
+                                     Time: ${now.toLocaleTimeString()}`;
+        }
+
+        setInterval(updateTime, 1000);
+        updateTime();
+        
+  </script>
     
     </div>
 
@@ -77,7 +108,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <style>
 body {
-  font-family: Comic Sans MS
+  font-family:'Noto-sans'
 }
 
 * {
@@ -839,7 +870,7 @@ input:checked + .slider:before {
     }); 
 </script>
 
-     <!-- Note to self! : Add banner for notifs ( use Aurora candy because they are scaryyyyyyyyy ) -->
+     <!-- Note to self! :  for notifs ( use Aurora candy because they are scaryyyyyyyyy ) -->
 
      </div>
 
