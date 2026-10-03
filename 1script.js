@@ -156,39 +156,53 @@ function dragElement(elmnt) {
 //Banners and notifications and general settings :
 dragElement(document.getElementById("Bannersnotifandreminders"));
 
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+function dragElement(element) {
+
+  var initialX = 0;
+  var initialY = 0;
+  var currentX = 0;
+  var currentY = 0;
+
+  if (document.getElementById(element.id + "header")) {
+
+    document.getElementById(element.id + "header").onmousedown = startDragging;
   } else {
-    elmnt.onmousedown = dragMouseDown;
+
+    element.onmousedown = startDragging;
   }
 
-  function dragMouseDown(e) {
+
+  function startDragging(e) {
     e = e || window.event;
     e.preventDefault();
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    document.onmousemove = elementDrag;
+
+    initialX = e.clientX;
+    initialY = e.clientY;
+
+    document.onmouseup = stopDragging;
+    document.onmousemove = dragElement;
   }
 
-  function elementDrag(e) {
+
+  function dragElement(e) {
     e = e || window.event;
     e.preventDefault();
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+
+    currentX = initialX - e.clientX;
+    currentY = initialY - e.clientY;
+    initialX = e.clientX;
+    initialY = e.clientY;
+
+    element.style.top = (element.offsetTop - currentY) + "px";
+    element.style.left = (element.offsetLeft - currentX) + "px";
   }
 
-  function closeDragElement() {
+  function stopDragging() {
     document.onmouseup = null;
     document.onmousemove = null;
   }
 }
+
 //Notes and flashcards :
 dragElement(document.getElementById("Notesandflashcardsgalore"));
 
