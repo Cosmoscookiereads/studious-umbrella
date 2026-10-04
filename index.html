@@ -161,7 +161,7 @@ body {
 }
 
 /* This one is Milkyway cookie's Input www.  */
-input[type=text] {www.cookie.StardustExpressway.Dreamland.cr
+input[type=text] {www.cookie.StardustExpressway.Dreamland.cr;
   width: 100px;
   border-radius: 3px;
   border: none;
@@ -820,7 +820,7 @@ function seekUpdate() {
 
                  <!-- Hydro reminders 2 : moveable, design complete, but no close button. -->
 <div>              
-     <div id="Bannersnotifandreminders2" style="width:388px height:740px"> 
+     <div id="Bannersnotifandreminders2" style="width:388px ; height:740px"> 
      <div id="Bannersnotifandremindersheader2" style="width:396ppx ; height:25px">
      <img src="https://64.media.tumblr.com/d6c63d217e4ea4b31608660f53116833/4fc7571dcd617d8d-54/s400x600/73f3027bba55a3bd05f02c117034535c3f4a1194.gifv"/></div> 
 
@@ -913,11 +913,12 @@ function dragElement(element) {
 </div>
 </div>
 </div>
+</div>
 
 
                       <!-- Draggable DIV -->
 <div>              
-     <div id="Bannersnotifandreminders1" style="width:388px height:740px"> 
+     <div id="Bannersnotifandreminders1" style="width:388px ; height:740px"> 
      <div id="Bannersnotifandremindersheader1" style="width:396ppx ; height:25px">
      <img src="https://64.media.tumblr.com/ddcbafbbcb083003b376f4192675b22c/4fc7571dcd617d8d-a8/s400x600/9fedd2ee729f32e070aa84a6fc65967ba8183f6b.gifv"/></div> 
 
@@ -933,7 +934,8 @@ function dragElement(element) {
                <img src="https://64.media.tumblr.com/dad641dbd48419a20a708372c77491f5/aa9940ffa48472d9-39/s2048x3072/8994f41c0c6ba5d94c3074473fc1044e64088080.pnj" width="400" height="40" alt="Fixed Size Image"/>
 
      </div>
-     
+     </div>
+     </div>
      </div>
 </div>     
 
@@ -1010,10 +1012,10 @@ function dragElement(element) {
   
 </script>
 
-
+     </div>
      </div>
                       <!-- Draggable DIV : COMPLETE. -->
-     <div id="Aboutme" style="width:388px height:740px"> 
+     <div id="Aboutme" style="width:388px ; height:740px"> 
      <div id="Aboutmeheader" style="width:396ppx ; height:25px">
      <img src="https://64.media.tumblr.com/efac8f49d7c9191fbc073e4cc697a787/4fc7571dcd617d8d-2a/s400x600/ca54ae3329bd6bfc05758c053e62ca676b0d4a10.gifv"/></div> 
      
@@ -1027,6 +1029,7 @@ function dragElement(element) {
 
          <p> Hi! I'm Chronos and more about me later! </p>
          <p>A writer who draws occasionally and really loves crocheting and playing cookie run ovenbreak!!!</p>
+         
          <img src="https://64.media.tumblr.com/f005182134c1891316e6daf46a9393b0/1ea874b572c5eb45-59/s500x750/99e13b5a11b31ac1040c7c4ff9fa09e2b6eeb8b5.gifv" width="350" height="300" alt="Fixed Size Image"/>
          
 <style>
@@ -1078,11 +1081,13 @@ function dragElement(element) {
            <!-- Note to self! : Add url to main tumblr on a picture then ttap into wither words oor picturee. -->
 
          <p>My personal Website</p>
+         </h3>
+
 </div>
 </div>
 </div>
 </div>
-</div>
+
 
 <script>
 var acc = document.getElementsByClassName("accordion");
@@ -1100,6 +1105,7 @@ for (i = 0; i < acc.length; i++) {
   });
 }
 </script>
+
 <style>
           #Aboutme {
   position: absolute;
@@ -1118,6 +1124,8 @@ for (i = 0; i < acc.length; i++) {
 }
 
 </style> 
+</div>
+</div>
 
 
      <!-- Note to self! : Special Thanks divider DIV. -->
@@ -1142,8 +1150,7 @@ function ThankyouandgoodbyeFunction() {
         <!-- Note to self! : Add pictures and LAST GOODBYE MUSIC PLAYS BAM BAMMM DUMMBDUMMAMMMM BUUDAHGUNMMMNMMBAMMM -->
          <!-- Note to self! : AAdd pictures of my friends in draawings, stardusters from teh Stardance Team, and teh one person who helped me tho I forgott tehriusername lamao  -->
      </div>
-  </div>
-</div>
+
      
     <div>
         <p style="color:#9370DB" font-family: Comic Sans MS > Thank you for trying out my OS inspired by one of or rather two of my favourite characters ever!!! </p>
@@ -1152,6 +1159,300 @@ function ThankyouandgoodbyeFunction() {
       <p>Most images are directly linked to the Cookie Run Wiki.</p>
       <p>Pages linked </p>
     </div>  
+    
+    <script> 
+    //Milkyway Cookie and Dreamjelly welcome aboard the dreamy express train intro! :
+dragElement(document.getElementById("welcomeaboardthedreamyexpress"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+var welcomeTitle = document.querySelector("#welcomeaboardthedreamyexpress")
+function closeWindow(element) {
+  element.style.display = "none"
+  function openWindow(element) {
+  element.style.display = "flex"
+  
+}
+}
+
+// DreamJelly Cookie's Welcomes you!!! :
+dragElement(document.getElementById("DreamJellyCookieWelcomesyou"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+//Digital clock somewhat moveableDIV funct :
+dragElement(document.getElementById("Stardustplatformtime"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+//Music Player :
+dragElement(document.getElementById("Musicplayermybeloved"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+//Banners and notifications and general settings :
+dragElement(document.getElementById("Bannersnotifandreminders"));
+
+function dragElement(element) {
+
+  var initialX = 0;
+  var initialY = 0;
+  var currentX = 0;
+  var currentY = 0;
+
+  if (document.getElementById(element.id + "header")) {
+
+    document.getElementById(element.id + "header").onmousedown = startDragging;
+  } else {
+
+    element.onmousedown = startDragging;
+  }
+
+
+  function startDragging(e) {
+    e = e || window.event;
+    e.preventDefault();
+
+    initialX = e.clientX;
+    initialY = e.clientY;
+
+    document.onmouseup = stopDragging;
+    document.onmousemove = dragElement;
+  }
+
+
+  function dragElement(e) {
+    e = e || window.event;
+    e.preventDefault();
+
+    currentX = initialX - e.clientX;
+    currentY = initialY - e.clientY;
+    initialX = e.clientX;
+    initialY = e.clientY;
+
+    element.style.top = (element.offsetTop - currentY) + "px";
+    element.style.left = (element.offsetLeft - currentX) + "px";
+  }
+
+  function stopDragging() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+//Notes and flashcards :
+dragElement(document.getElementById("Notesandflashcardsgalore"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+
+// Aboutme! : 
+dragElement(document.getElementById("Aboutme"));
+
+function dragElement(element) {
+
+  var initialX = 0;
+  var initialY = 0;
+  var currentX = 0;
+  var currentY = 0;
+
+  if (document.getElementById(element.id + "header")) {
+
+    document.getElementById(element.id + "header").onmousedown = startDragging;
+  } else {
+
+    element.onmousedown = startDragging;
+  }
+
+  function startDragging(e) {
+    e = e || window.event;
+    e.preventDefault();
+
+    initialX = e.clientX;
+    initialY = e.clientY;
+
+    document.onmouseup = stopDragging;
+    document.onmousemove = dragElement;
+  }
+
+  function dragElement(e) {
+    e = e || window.event;
+    e.preventDefault();
+
+    currentX = initialX - e.clientX;
+    currentY = initialY - e.clientY;
+    initialX = e.clientX;
+    initialY = e.clientY;
+
+    element.style.top = (element.offsetTop - currentY) + "px";
+    element.style.left = (element.offsetLeft - currentX) + "px";
+  }
+
+  function stopDragging() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+    </script>
+    
 
      <script src="1script.js"></script>
   <script type="module" src="./script.js"></script>
