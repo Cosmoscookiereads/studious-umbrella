@@ -761,122 +761,14 @@ function seekUpdate() {
 </div>
 
 
-     <!-- DIVIDER OF COMPLETENESS -->
-                <!-- Draggable DIV : Banners and Reminders galore!-->
-     <div id="Bannersnotifandreminderssliiders" styles="width:2400px height 24px">
-     <div styles =" position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) ; border: solid" >
-           <p> Banners and notifs for reminders</p>
-          <!-- Note to self! :  for notifs ( use Aurora candy because they are scaryyyyyyyyy ) -->
-     <style>
-.switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 34px;
-}
 
-.switch input { 
-  opacity: 0;
-  width: 0;
-  height: 0;
-}
-
-.slider {
-  position: absolute;
-  cursor: pointer;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #dbb9ff;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 26px;
-  width: 26px;
-  left: 4px;
-  bottom: 4px;
-  background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
-}
-
-input:checked + .slider {
-  background-color: #432fff;
-}
-
-input:focus + .slider {
-  box-shadow: 0 0 1px #432fff;
-}
-
-input:checked + .slider:before {
-  -webkit-transform: translateX(26px);
-  -ms-transform: translateX(26px);
-  transform: translateX(26px);
-}
-
-/* Rounded sliders */
-.slider.round {
-  border-radius: 34px;
-}
-
-.slider.round:before {
-  border-radius: 50%;
-}
-</style>
-    <label class="switch"> 
-      <input type="checkbox" id="hydrotoggle"> 
-      <span class="slider round"></span>
-    </label> Hydration reminders!
-          <div class="text" id="hydrotext">Hydration reminders!: Deactivated!</div> 
-
-
-<script>
-    const toggle = document.getElementById('hydrotoggle'); 
-    const text = document.getElementById('hydrotext'); 
-     
-    toggle.addEventListener('change', () => { 
-      if (toggle.checked) { 
-        text.textContent = 'Hydration reminders!: Deactivated!'; 
-      } else { 
-        text.textContent = 'Hydration reminders!: Activated!'; 
-      } 
-    }); 
-</script>
-
-    <label class="switch"> 
-      <input type="checkbox" id="streachtoggle"> 
-      <span class="slider round"></span>
-    </label> Streaching reminders!
-          <div class="text" id="streachtext">Streach reminders!: Deactivated!</div> 
-
-<script>
-    const toggle = document.getElementById('streachtoggle'); 
-    const text = document.getElementById('streachtext'); 
-     
-    toggle.addEventListener('change', () => { 
-      if (toggle.checked) { 
-        text.textContent = 'Streach reminders!: Deactivated!'; 
-      } else { 
-        text.textContent = 'Streach reminders!: Activated!'; 
-      } 
-    }); 
-</script>
-
-     </div>
-
-     </div>
 
 
      <!-- Note to self! : Draggable DIV -->
     <div> 
              <h5>Section for notes </h5> 
      <div id="Notesandflashcardsgalore" styles="width:2400px height 24px">
-      <div styles =" position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) ; border: solid ; width : 30px  l "
+      <div styles =" position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) ; border: solid ; width : 30px "
 <!-- Note to self! : 5 options for notes : LIGHT violet, cream white ( I think thats it...), dark grrey and black or white.  -->
        <p>Notes</p>
        <img src="https://64.media.tumblr.com/045ddba1e814cfb3922654935f87ef90/e897e556bedb879b-1f/s2048x3072/b6e5efd8a7e28b18a9dfe449d4a0b8f47759def9.pnj" width="170" height="170" alt="Fixed Size Image"> 
@@ -922,12 +814,14 @@ input:checked + .slider:before {
       
      </div>
 
- 
 
-                        <!-- Draggable DIV -->
-     <div>              
-     <div id="Bannersnotifandreminders" style="width:388px height:740px"> 
-     <div id="Bannersnotifandremindersheader" style="width:396ppx ; height:25px">
+
+
+
+                 <!-- Hydro reminders 2 : moveable, design complete, but no close button. -->
+<div>              
+     <div id="Bannersnotifandreminders2" style="width:388px height:740px"> 
+     <div id="Bannersnotifandremindersheader2" style="width:396ppx ; height:25px">
      <img src="https://64.media.tumblr.com/d6c63d217e4ea4b31608660f53116833/4fc7571dcd617d8d-54/s400x600/73f3027bba55a3bd05f02c117034535c3f4a1194.gifv"/></div> 
 
       <div class="content"> 
@@ -940,15 +834,91 @@ input:checked + .slider:before {
          <img src="https://64.media.tumblr.com/5aeca605f427f296f1261a7ac75036b8/aece1ac450cc9327-f5/s1280x1920/559b42f5fe84a7341be811c2c0f3a7d6033627dc.jpg" width="350" height="300" alt="Fixed Size Image"/>
          
           <img src="https://64.media.tumblr.com/25b34f8ac1ac2526dcf58b8aba9810f3/6d941bf247f64aa2-e4/s2048x3072/f026fc8e1bf17f6330b201a7b3705442ab6448e8.pnj"  width="400" height="35" alt="Fixed Size Image"/>
-               </div>
-     
-     </div>
+      
+         
+
+<style>
+          #Bannersnotifandreminders2 {
+  position: absolute;
+  z-index: 9;
+  background-color: #FFFDF5;
+  border: 1px solid #F1DB5F;
+  text-align: center;
+}
+
+#Bannersnotifandremindersheader2 {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #FFFDF5;
+  color: #fff;
+  border: 2px solid #F1DB5F;
+}
+
+</style> 
+<script>
+
+// Make the DIV element draggable:
+dragElement(document.getElementById("Bannersnotifandreminders2"));
+
+function dragElement(element) {
+
+  var initialX = 0;
+  var initialY = 0;
+  var currentX = 0;
+  var currentY = 0;
+
+  if (document.getElementById(element.id + "header")) {
+
+    document.getElementById(element.id + "header").onmousedown = startDragging;
+  } else {
+
+    element.onmousedown = startDragging;
+  }
+
+
+  function startDragging(e) {
+    e = e || window.event;
+    e.preventDefault();
+
+    initialX = e.clientX;
+    initialY = e.clientY;
+
+    document.onmouseup = stopDragging;
+    document.onmousemove = dragElement;
+  }
+
+
+  function dragElement(e) {
+    e = e || window.event;
+    e.preventDefault();
+
+    currentX = initialX - e.clientX;
+    currentY = initialY - e.clientY;
+    initialX = e.clientX;
+    initialY = e.clientY;
+
+    element.style.top = (element.offsetTop - currentY) + "px";
+    element.style.left = (element.offsetLeft - currentX) + "px";
+  }
+
+  function stopDragging() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
 </div>
+</div>
+</div>
+</div>
+</div>
+
 
                       <!-- Draggable DIV -->
 <div>              
-     <div id="Bannersnotifandreminders" style="width:388px height:740px"> 
-     <div id="Bannersnotifandremindersheader" style="width:396ppx ; height:25px">
+     <div id="Bannersnotifandreminders1" style="width:388px height:740px"> 
+     <div id="Bannersnotifandremindersheader1" style="width:396ppx ; height:25px">
      <img src="https://64.media.tumblr.com/ddcbafbbcb083003b376f4192675b22c/4fc7571dcd617d8d-a8/s400x600/9fedd2ee729f32e070aa84a6fc65967ba8183f6b.gifv"/></div> 
 
       <div class="content"> 
@@ -970,7 +940,7 @@ input:checked + .slider:before {
          
 
 <style>
-          #Bannersnotifandreminders {
+          #Bannersnotifandreminders1 {
   position: absolute;
   z-index: 9;
   background-color: #606F5F;
@@ -978,7 +948,7 @@ input:checked + .slider:before {
   text-align: center;
 }
 
-#Bannersnotifandremindersheader {
+#Bannersnotifandremindersheader1 {
   padding: 10px;
   cursor: move;
   z-index: 10;
@@ -988,9 +958,61 @@ input:checked + .slider:before {
 
 </style> 
 
-<!-- Note to self! : REMEMBER TO REMOVE THOSE!!!! -->
+<script>
+dragElement(document.getElementById("Bannersnotifandreminders1"));
+
+function dragElement(element) {
+
+  var initialX = 0;
+  var initialY = 0;
+  var currentX = 0;
+  var currentY = 0;
+
+  if (document.getElementById(element.id + "header")) {
+
+    document.getElementById(element.id + "header").onmousedown = startDragging;
+  } else {
+
+    element.onmousedown = startDragging;
+  }
+
+
+  function startDragging(e) {
+    e = e || window.event;
+    e.preventDefault();
+
+    initialX = e.clientX;
+    initialY = e.clientY;
+
+    document.onmouseup = stopDragging;
+    document.onmousemove = dragElement;
+  }
+
+
+  function dragElement(e) {
+    e = e || window.event;
+    e.preventDefault();
+
+    currentX = initialX - e.clientX;
+    currentY = initialY - e.clientY;
+    initialX = e.clientX;
+    initialY = e.clientY;
+
+    element.style.top = (element.offsetTop - currentY) + "px";
+    element.style.left = (element.offsetLeft - currentX) + "px";
+  }
+
+  function stopDragging() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+  
+</script>
+
+
      </div>
-                      <!-- Draggable DIV -->
+                      <!-- Draggable DIV : COMPLETE. -->
      <div id="Aboutme" style="width:388px height:740px"> 
      <div id="Aboutmeheader" style="width:396ppx ; height:25px">
      <img src="https://64.media.tumblr.com/efac8f49d7c9191fbc073e4cc697a787/4fc7571dcd617d8d-2a/s400x600/ca54ae3329bd6bfc05758c053e62ca676b0d4a10.gifv"/></div> 
@@ -1136,6 +1158,8 @@ function ThankyouandgoodbyeFunction() {
   <link rel="stylesheet" type="text/css" href="2style.css" />
 
        <script src="buttonsandsliders.js"></script>
+  <script type="module" src="./script.js"></script>
+         <script src="bannersnotifsandreminders.js"></script>
   <script type="module" src="./script.js"></script>
      
     </body>
