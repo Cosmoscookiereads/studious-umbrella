@@ -321,8 +321,119 @@ DreamJellyCookieWelcomesyou {
      </div>
      </div>
      </div>
+                      <!-- Draggable DIV notiif 4 (red) streach reminderes : draggable, designed, needs button close -->
+<div>              
+     <div id="Bannersnotifandreminders4" style="width:388px height:740px"> 
+     <div id="Bannersnotifandremindersheader4" style="width:396ppx ; height:25px">
+     <img src="https://64.media.tumblr.com/b191f522458ed05a21e7c31321306751/4fc7571dcd617d8d-03/s400x600/ee12464c31f32f95712157e6fc8623a077d51872.gifv"/></div> 
 
-                      <!-- Draggable DIV -->
+      <div class="content"> </div>
+                <style>
+.image-container {
+  width: 373px;
+  height: 311px;
+  
+}
+
+.image-container img {
+  width: 90%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 20% 20%;  
+}
+</style>
+      <div style="border:#8E3521 solid; width:403px ; height:fit-content ; background-color:#FFAE9C"> 
+      <h1 style = "color:#BCC9B5;">
+      <img src="https://64.media.tumblr.com/c24ebf9d9d0b144fcfc5bb3239b58fb9/aa9940ffa48472d9-31/s2048x3072/dd26d454bbe6da43625740626c213a854b7a1332.pnj"  width="400" ; height="35" ; alt="Fixed Size Image"/>
+         <h2> STREACH BREAK! </h2>
+         <img src="https://64.media.tumblr.com/be4fba5dca1321ef0dbeb7e0b8a430b9/3a61a5636f08e92a-b8/s2048x3072/c92f5cbcdb840ae95f65c4eb3a76397f91052ce8.pnj" width="400" ; height="30" ; alt="Fixed Size Image"/>
+         <p> MILKYWAY COOKIE IS CHEERING YOU ON!</p>
+         <img src="https://64.media.tumblr.com/adcd1ebd20fa377d0993f492f58f9f44/0a97fe61d0fbfdef-cb/s2048x3072/97d868c01e551bd70055f477a0549ea632419e0c.pnj" width="400" ; height="30" ; alt="Fixed Size Image"/>
+         <div class="image-container">
+         <img src="https://64.media.tumblr.com/1f691b65687843a22350e6859e039e45/81aa9677b55a95aa-ac/s1280x1920/84fa6bcf569cf28951c163dba9c7e647397c6084.pnj" width="640" ; height="436" ; alt="Fixed Size Image"/>
+         </div>
+         
+          <img src="https://64.media.tumblr.com/c24ebf9d9d0b144fcfc5bb3239b58fb9/aa9940ffa48472d9-31/s2048x3072/dd26d454bbe6da43625740626c213a854b7a1332.pnj"  width="400" ; height="35" ; alt="Fixed Size Image"/>
+          </div>
+          </div>
+          </div>
+          </div>
+
+         
+
+<style>
+          #Bannersnotifandreminders4 {
+  position: absolute;
+  z-index: 9;
+  background-color: #F7D08A;
+  border: 1px solid #8E3521;
+  text-align: center;
+}
+
+#Bannersnotifandremindersheader4 {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #F7D08A;
+  color: #662121;
+}
+
+</style> 
+
+<script>
+
+// Div notif 4 (red):
+dragElement(document.getElementById("Bannersnotifandreminders4"));
+
+function dragElement(element) {
+
+  var initialX = 0;
+  var initialY = 0;
+  var currentX = 0;
+  var currentY = 0;
+
+  if (document.getElementById(element.id + "header")) {
+
+    document.getElementById(element.id + "header").onmousedown = startDragging;
+  } else {
+
+    element.onmousedown = startDragging;
+  }
+
+
+  function startDragging(e) {
+    e = e || window.event;
+    e.preventDefault();
+
+    initialX = e.clientX;
+    initialY = e.clientY;
+
+    document.onmouseup = stopDragging;
+    document.onmousemove = dragElement;
+  }
+
+
+  function dragElement(e) {
+    e = e || window.event;
+    e.preventDefault();
+
+    currentX = initialX - e.clientX;
+    currentY = initialY - e.clientY;
+    initialX = e.clientX;
+    initialY = e.clientY;
+
+    element.style.top = (element.offsetTop - currentY) + "px";
+    element.style.left = (element.offsetLeft - currentX) + "px";
+  }
+
+  function stopDragging() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+</script>
+
+                      <!-- Draggable DIV: Notiffication 3 Streach reminders: Moveable, designed, needs to make buttton close-->
 <div>              
      <div id="Bannersnotifandreminders3" style="width:388px ; height:740px"> 
      <div id="Bannersnotifandremindersheader3" style="width:396ppx ; height:25px">
