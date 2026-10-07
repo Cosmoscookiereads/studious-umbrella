@@ -6,7 +6,8 @@
 
 </head>
 
-    <body style="background-color: #E6E6FA; background-image:https://cdn.wikimg.net/en/cookierunwiki/images/d/d0/Crob_lobby_fantastical_stardust_platform.png; background-size:cover;  font-family:Noto sans kr; "> 
+    <body style="background-color: #E6E6FA; background-size:cover; font-family:Noto sans kr;"> 
+
 
  <!-- Top bar, sky's the limit here to the world of dreams!!!'-->
   <div style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: #7e5fd1; color: #fff; justify-content: space-evenly">
@@ -18,9 +19,10 @@
           Notifications 
            <!-- That is a placeholder until I can find something better...'-->
      </p>
-
+      
   </div>
-
+  <p style="background-image:https://cdn.wikimg.net/en/cookierunwiki/images/d/d0/Crob_lobby_fantastical_stardust_platform.png"></p>
+      <img src="https://cdn.wikimg.net/en/cookierunwiki/images/d/d0/Crob_lobby_fantastical_stardust_platform.png"/>
 
  <!-- Oh digital clock you're the only clock that behaavees, moved duplicate to styyle cs file alr -->
 <style>
@@ -326,6 +328,7 @@ DreamJellyCookieWelcomesyou {
 <div>              
      <div id="Bannersnotifandreminders4" style="width:fit-content ; height:fit-content"> 
      <div id="Bannersnotifandremindersheader4" style="width:fit-content ; height:fit-content">
+               <button id="Bannersnotifandreminders4closeButton">X</button>
      
      <img src="https://64.media.tumblr.com/b191f522458ed05a21e7c31321306751/4fc7571dcd617d8d-03/s400x600/ee12464c31f32f95712157e6fc8623a077d51872.gifv"/></div> 
 
@@ -438,11 +441,29 @@ function dragElement(element) {
   }
 }
 </script>
+             <style>
+             #Bannersnotifandreminders4closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+    </style>
+
+    <script>
+    const Bannersnotifandreminders4closeButton = document.getElementById('Bannersnotifandreminders4closeButton');
+const Bannersnotifandreminders4 = document.getElementById('Bannersnotifandreminders4');
+const Bannersnotifandreminders4header = document.getElementById('Bannersnotifandreminders4header');
+ 
+Bannersnotifandreminders4closeButton.addEventListener('click', function () {
+  Bannersnotifandreminders4.style.display = 'none';
+});
+    </script>
 
                       <!-- Draggable DIV: Notiffication 3 Streach reminders: Moveable, designed, needs to make buttton close-->
 <div>              
      <div id="Bannersnotifandreminders3" style="width:fit-content ; height:fit-content"> 
      <div id="Bannersnotifandremindersheader3" style="width:fit-content ; height:fit-content">
+                   <button id="Bannersnotifandreminders3closeButton">X</button>
      <img src="https://64.media.tumblr.com/d6c63d217e4ea4b31608660f53116833/4fc7571dcd617d8d-54/s400x600/73f3027bba55a3bd05f02c117034535c3f4a1194.gifv"/></div> 
 
       <div class="content"> </div>
@@ -478,6 +499,11 @@ function dragElement(element) {
   z-index: 10;
   background-color: #FFEAC0;
   color: #FF9E2F;
+}
+             #Bannersnotifandreminders3closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
 }
 
 </style> 
@@ -533,11 +559,21 @@ function dragElement(element) {
   }
 }
 </script>
+    <script>
+    const Bannersnotifandreminders3closeButton = document.getElementById('Bannersnotifandreminders3closeButton');
+const Bannersnotifandreminders3 = document.getElementById('Bannersnotifandreminders3');
+const Bannersnotifandreminders3header = document.getElementById('Bannersnotifandreminders3header');
+ 
+Bannersnotifandreminders3closeButton.addEventListener('click', function () {
+  Aboutme.style.display = 'none';
+});
+    </script>
 
                  <!-- Hydro reminders 2 : moveable, design complete, but no close button. -->
 <div>              
      <div id="Bannersnotifandreminders2" style="width:width:fit-content ; height:width:fit-content"> 
      <div id="Bannersnotifandremindersheader2" style="width:width:fit-content ; height:width:fit-content">
+                   <button id="Bannersnotifandreminders2closeButton">X</button>
                    <img src="https://64.media.tumblr.com/bfc11316bc885d46d0ed19b06986b0b7/4fc7571dcd617d8d-b5/s400x600/bc6b87400e801912def0566318f13ece5cdf6520.gifv"/></div> 
 
       <div class="content"> 
@@ -570,7 +606,11 @@ function dragElement(element) {
   color: #fff;
   border: 5px solid #C9FAFC;
 }
-
+             #Bannersnotifandreminders2closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 </style> 
 <script>
 
@@ -624,6 +664,15 @@ function dragElement(element) {
   }
 }
 </script>
+    <script>
+    const Bannersnotifandreminders2closeButton = document.getElementById('Bannersnotifandreminders2closeButton');
+const Bannersnotifandreminders2 = document.getElementById('Bannersnotifandreminders2');
+const Bannersnotifandreminders2header = document.getElementById('Bannersnotifandreminders2header');
+ 
+Bannersnotifandreminders2closeButton.addEventListener('click', function () {
+  Bannersnotifandreminders2.style.display = 'none';
+});
+    </script>
 </div>
 </div>
 </div>
@@ -636,6 +685,7 @@ function dragElement(element) {
 <div>              
      <div id="Bannersnotifandreminders1" style="width:fit-content ; height:fit-content"> 
      <div id="Bannersnotifandremindersheader1" style="fit-content ; height:fit-content">
+                   <button id="Bannersnotifandreminders1closeButton">X</button>
      <img src="https://64.media.tumblr.com/ddcbafbbcb083003b376f4192675b22c/4fc7571dcd617d8d-a8/s400x600/9fedd2ee729f32e070aa84a6fc65967ba8183f6b.gifv"/></div> 
 
       <div class="content"> 
@@ -673,7 +723,11 @@ function dragElement(element) {
   background-color: #606F5F;
   color: #fff;
 }
-
+             #Bannersnotifandreminders1closeButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 </style> 
 
 <script>
@@ -728,11 +782,22 @@ function dragElement(element) {
   
 </script>
 
+<script>
+    const Bannersnotifandreminders1closeButton = document.getElementById('Bannersnotifandreminders1closeButton');
+const Bannersnotifandreminders1 = document.getElementById('Bannersnotifandreminders1');
+const Bannersnotifandreminders1header = document.getElementById('Bannersnotifandreminders1header');
+ 
+Bannersnotifandreminders1closeButton.addEventListener('click', function () {
+  Bannersnotifandreminders1.style.display = 'none';
+});
+    </script>
+
      </div>
      </div>
-                      <!-- Draggable DIV : COMPLETE. -->
+                     <!-- Draggable DIV : COMPLETE. -->
      <div id="Aboutme" style="width:fit-content ; height:fit-content"> 
      <div id="Aboutmeheader" style="width:100ppx ; height:fit-content">
+         <button id="AboutmecloseButton">X</button>
      <img src="https://64.media.tumblr.com/efac8f49d7c9191fbc073e4cc697a787/4fc7571dcd617d8d-2a/s400x600/ca54ae3329bd6bfc05758c053e62ca676b0d4a10.gifv"/></div> 
      
       <!-- Note to self! : This is suupposed to be at the end! LIKE A SECRET -->
@@ -747,6 +812,7 @@ function dragElement(element) {
          <p>A writer who draws occasionally and really loves crocheting and playing cookie run ovenbreak!!!</p>
          
          <img src="https://64.media.tumblr.com/f005182134c1891316e6daf46a9393b0/1ea874b572c5eb45-59/s500x750/99e13b5a11b31ac1040c7c4ff9fa09e2b6eeb8b5.gifv" width="350" height="300" alt="Fixed Size Image"/>
+         
          
 <style>
 .accordion {
@@ -844,6 +910,11 @@ for (i = 0; i < acc.length; i++) {
   color: #fff;
 }
 
+#AboutmecloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
 </style> 
 <script>
 // Aboutme! : 
@@ -893,6 +964,15 @@ function dragElement(element) {
     document.onmousemove = null;
   }
 }
+    </script>
+    <script>
+    const AboutmecloseButton = document.getElementById('AboutmecloseButton');
+const Aboutme = document.getElementById('Aboutme');
+const Aboutmeheader = document.getElementById('Aboutme');
+ 
+AboutmecloseButton.addEventListener('click', function () {
+  Aboutme.style.display = 'none';
+});
     </script>
 
      <!-- Note to self! : Special Thanks divider DIV. -->
