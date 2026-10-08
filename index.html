@@ -3,12 +3,9 @@
 <head>
   <meta charset="UTF-8">
   <title> Milky Way Cookie OS! </title>
-
 </head>
 
-    <body style="background-color: #E6E6FA; background-size:cover; font-family:Noto sans kr;"> 
-
-
+    <body style="font-family:Noto sans kr;background-image:https://cdn.wikimg.net/en/cookierunwiki/images/d/d0/Crob_lobby_fantastical_stardust_platform.png;background-size: cover; background-repeat: no-repeat; margin: 0px;"> 
  <!-- Top bar, sky's the limit here to the world of dreams!!!'-->
   <div style="position: absolute; width: 100%; display: flex; backdrop-filter: blur(10px); background-color: #7e5fd1; color: #fff; justify-content: space-evenly">
     <p> Milkyway Cookie Os! </p>
@@ -21,7 +18,6 @@
      </p>
       
   </div>
-  <p style="background-image:https://cdn.wikimg.net/en/cookierunwiki/images/d/d0/Crob_lobby_fantastical_stardust_platform.png"></p>
       <img src="https://cdn.wikimg.net/en/cookierunwiki/images/d/d0/Crob_lobby_fantastical_stardust_platform.png"/>
 
  <!-- Oh digital clock you're the only clock that behaavees, moved duplicate to styyle cs file alr -->
@@ -93,7 +89,7 @@
 
 <div class="content">
 <div style="border:#6a627a solid; width:1068px ; height:269px ; border-radius: 120px">
-  <p style="cursor: pointer" id="welcomeaboardthedreamyexpressclosebutton"> X </p>
+  <button id="welcomeaboardthedreamyexpresscloseButton">X</button>
      <div id="welcomeaboardthedreamyexpress" styles="width:2400px height=24 ">
       <div id="Aboardthedreamyexppressheader">Tickets please!</div> 
       <!-- Note to self! : This is supposed to be ( pressable ) aka there is supposed to be a button here. -->
@@ -188,7 +184,7 @@ input[type=text] {
   padding: 10px;
 }
 </style>
-</head>
+
 <body>
 <!-- Note to self! : This is supposed to be buttons! ( pressable ) -->
 
@@ -220,23 +216,26 @@ input[type=text] {
   margin-bottom: 25px;
 }
 </style>
-
-     <div id="DreamJellyCookieWelcomesyou" styles="width:2400px ; height=24px">
+<div class="content">
+<div style="border:#6a627a solid; width:2400px ; height:fit-content ; border-radius: 120px">
+    <div id="DreamJellyCookieWelcomesyou" styles="width:2400px ; height=fit-content">
+     <div id="DreamJellyCookieWelcomesyouheader" style="width:2400px ; height:fit-content">
+     </div>
      
       <!-- Note to self! : This is supposed to be ( pressable ) aka there is supposed to be a button here. -->
       
         <!-- Note to self! : Add DreamJelly cookkie sprite and name and talkcard thing here. Make Dreamjelly first foorm then pooof! 4th form! -->
          <img src="https://64.media.tumblr.com/e646b71c0c4796bf8207c680f67eb706/df3a0a6a204983dc-da/s2048x3072/a192caf751bc2c8a5d131dc30f36f5ff3bc1026f.pnj"/>
-        <img src="https://cdn.wikimg.net/en/cookierunwiki/images/6/6c/Crob_dreamjelly_smile.png"/> 
+        <img src="https://cdn.wikimg.net/en/cookierunwiki/images/6/6c/Crob_dreamjelly_smile.png"width="fit-content "height="fit-content "alt="Fixed Size Image"/> 
      <div style="border:#6a627a solid; width:1600px height=200px ; border-radius: 1200px">
         <h2 style =" color:rgb(255, 250, 223)"> DreamJelly Cookie : I wanna share some Rainbow bearroll jellies with you! </h2>
-      <img src="https://64.media.tumblr.com/325429e1c5abc422dad88ca755ad1ffe/6d941bf247f64aa2-b9/s2048x3072/bb4014273fd0bac7d46e98dfed406c1205ca1485.pnj"/>
+      <img src="https://64.media.tumblr.com/325429e1c5abc422dad88ca755ad1ffe/6d941bf247f64aa2-b9/s2048x3072/bb4014273fd0bac7d46e98dfed406c1205ca1485.pnj"width="fit-content "height="fit-content "alt="Fixed Size Image"/>
 
       <!-- Note to self! : This is supposed to be able to roll in a line. Then make it loop. -->
       <!-- Note to self! : Make the Bearjellies disappear as you click them. Set to a set number..) -->
       <!-- Note to self! : bearrjellies all disappear when you eat them all up! -->
       
-      <img src="https://64.media.tumblr.com/538cd74a1a7e1d710d375d5a4ca0b6c5/df3a0a6a204983dc-e5/s2048x3072/6cba5872c703d59859410e430638382e7c03bc4e.pnj"/>
+      <img src="https://64.media.tumblr.com/538cd74a1a7e1d710d375d5a4ca0b6c5/df3a0a6a204983dc-e5/s2048x3072/6cba5872c703d59859410e430638382e7c03bc4e.pnj"width="fit-content "height="fit-content "alt="Fixed Size Image"/>
      </div>
 
     </div>
@@ -250,7 +249,7 @@ input[type=text] {
   text-align: center;
 }
 
-DreamJellyCookieWelcomesyou {
+#DreamJellyCookieWelcomesyouheader {
   padding: 10px;
   cursor: move;
   z-index: 10;
@@ -258,35 +257,88 @@ DreamJellyCookieWelcomesyou {
   color: #fff;
 }
 </style> 
+<script>
+
+// DreamJelly Cookie's Welcomes you!!! :
+dragElement(document.getElementById("DreamJellyCookieWelcomesyou"));
+
+function dragElement(elmnt) {
+  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
+  if (document.getElementById(elmnt.id + "header")) {
+    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
+  } else {
+    elmnt.onmousedown = dragMouseDown;
+  }
+
+  function dragMouseDown(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    document.onmouseup = closeDragElement;
+    document.onmousemove = elementDrag;
+  }
+
+  function elementDrag(e) {
+    e = e || window.event;
+    e.preventDefault();
+    pos1 = pos3 - e.clientX;
+    pos2 = pos4 - e.clientY;
+    pos3 = e.clientX;
+    pos4 = e.clientY;
+    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
+    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
+  }
+
+  function closeDragElement() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+var DreamJellyCookieWelcomesyouheader = document.querySelector("#DreamJellyCookieWelcomesyouheader")
+function closeWindow(element) {
+  element.style.display = "none"
+  function openWindow(element) {
+  element.style.display = "flex"
+  
+}
+}
+</script>
 
 
 
 
-                                                           <!-- DIVIDER OF COMPLETENESS -->
-
-
-               <!-- Draggable DIV -->
-                      
-
-
-
-
+                                                          <!-- DIVIDER OF COMPLETENESS -->
      <!-- Note to self! : Draggable DIV -->
-    <div> 
-             <h5>Section for notes </h5> 
-     <div id="Notesandflashcardsgalore" styles="width:2400px ; height:24px">
-      <div styles =" position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%) ; border: solid ; width : 30px "
+      <div id="desktopAppsNotepad" style="padding-top: 64px; padding-left: 14px;">
+        <div style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content">
 <!-- Note to self! : 5 options for notes : LIGHT violet, cream white ( I think thats it...), dark grrey and black or white.  -->
-       <p>Notes</p>
-       <img src="https://64.media.tumblr.com/045ddba1e814cfb3922654935f87ef90/e897e556bedb879b-1f/s2048x3072/b6e5efd8a7e28b18a9dfe449d4a0b8f47759def9.pnj" width="170" height="170" alt="Fixed Size Image"> 
+        
+        <img src="https://64.media.tumblr.com/045ddba1e814cfb3922654935f87ef90/e897e556bedb879b-1f/s2048x3072/b6e5efd8a7e28b18a9dfe449d4a0b8f47759def9.pnj" style="width: 120px; height: 120px; border-radius: 16px;"/> 
+       <p style="margin: 0px; color: #fff; ">Notes</p>
+       </div>
+       </div>
+               <script>
+          var selectedIcon = undefined
+         
+        </script>
+
       <!-- Note to self! : 3 tabs, notes and flashcards that are interchangeable, tehn 3rd tab leads to saved writing! ( Add disclaimer that says notes can be saved and 
        are saved locally ONLY!!! I DO NOTTT SAVE ANYTHING! 
        Uhhh google how to make notes and files and flashcarrds save locazally ) -->
-       <p> Files </p>
-       <p> Flashcards</p>
-      
-     </div>
-    </div>
+       <div id="desktopAppsFilesandFlashcards" style="padding-top: 64px; padding-left: 14px;">
+        <div style="text-align: center; padding: 16px; filter: drop-shadow(0 0 8px black); width: fit-content">
+
+       <img src="https://64.media.tumblr.com/aff50c9241212ec60cba2a74b471d071/e897e556bedb879b-57/s2048x3072/b91020d7c007349c7ba3cb8941e00ed769b13ae7.pnj" style="width: 120px; height: 120px; border-radius: 16px;"/> 
+       <p style="margin: 0px; color: #fff; "> Files and Flashcards!</p>
+       </div>
+
+        <script>
+          var selectedIcon = undefined
+         
+        </script>
+      </div>
 
 
                     <!-- Note to self! : Draggable DIV -->
@@ -565,7 +617,7 @@ const Bannersnotifandreminders3 = document.getElementById('Bannersnotifandremind
 const Bannersnotifandreminders3header = document.getElementById('Bannersnotifandreminders3header');
  
 Bannersnotifandreminders3closeButton.addEventListener('click', function () {
-  Aboutme.style.display = 'none';
+  Bannersnotifandreminders3.style.display = 'none';
 });
     </script>
 
@@ -977,8 +1029,9 @@ AboutmecloseButton.addEventListener('click', function () {
 
      <!-- Note to self! : Special Thanks divider DIV. -->
       <!-- Note to self! : Draggable DIV That is also a popout. -->
-     <div id="SPPECIALTHANKS" styles="width:2400px height 24px"> 
-       <h7> SPECIAL THANKS SECTION (like every good game or thing does ) </h7>
+     <div id="SPECIALTHANKS" styles="width:2400px height 24px"> 
+       <h7> SPECIAL THANKS SECTION 
+(like every good game or thing does ) </h7>
 <p><button onclick="ThankyouandgoodbyeFunction()">Click Me</button></p>
 
 <div id="SpecialThanksDIV">Thank you to my best friends and that one person who helped me in that one zoom meeting, and to everyone at Stardance Team!</div>
@@ -993,7 +1046,7 @@ function ThankyouandgoodbyeFunction() {
   }
 }
 </script>
-
+               <!-- Draggable DIV -->
         <!-- Note to self! : Add pictures and LAST GOODBYE MUSIC PLAYS BAM BAMMM DUMMBDUMMAMMMM BUUDAHGUNMMMNMMBAMMM -->
          <!-- Note to self! : AAdd pictures of my friends in draawings, stardusters from teh Stardance Team, and teh one person who helped me tho I forgott tehriusername lamao  -->
      </div>
@@ -1006,6 +1059,25 @@ function ThankyouandgoodbyeFunction() {
       <p>Most images are directly linked to the Cookie Run Wiki.</p>
       <p>Pages linked </p>
     </div>  
+    <style>
+          #SPECIALTHANKS {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  padding:4px;
+}
+
+#SpecialThanksDIV {
+  padding: 39px;
+  cursor: move;
+  z-index: 10;
+  background-color: #c7a7ff;
+  color: #fff;
+}
+</style> 
+
     
     <script> 
     //Milkyway Cookie and Dreamjelly welcome aboard the dreamy express train intro! :
@@ -1052,44 +1124,6 @@ function closeWindow(element) {
   element.style.display = "flex"
   
 }
-}
-</script>
-<script>
-// DreamJelly Cookie's Welcomes you!!! :
-dragElement(document.getElementById("DreamJellyCookieWelcomesyou"));
-
-function dragElement(elmnt) {
-  var pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
-  if (document.getElementById(elmnt.id + "header")) {
-    document.getElementById(elmnt.id + "header").onmousedown = dragMouseDown;
-  } else {
-    elmnt.onmousedown = dragMouseDown;
-  }
-
-  function dragMouseDown(e) {
-    e = e || window.event;
-    e.preventDefault();
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    document.onmouseup = closeDragElement;
-    document.onmousemove = elementDrag;
-  }
-
-  function elementDrag(e) {
-    e = e || window.event;
-    e.preventDefault();
-    pos1 = pos3 - e.clientX;
-    pos2 = pos4 - e.clientY;
-    pos3 = e.clientX;
-    pos4 = e.clientY;
-    elmnt.style.top = (elmnt.offsetTop - pos2) + "px";
-    elmnt.style.left = (elmnt.offsetLeft - pos1) + "px";
-  }
-
-  function closeDragElement() {
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
 }
 </script>
 <script>
