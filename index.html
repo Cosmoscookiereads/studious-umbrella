@@ -82,15 +82,19 @@
   z-index: 10;
   background-color: #7044bb;
   color: #fff;
+}  
+   #welcomeaboardthedreamyexpresscloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+
 }
 
 </style> 
 
-
 <div class="content">
-<div style="border:#6a627a solid; width:1068px ; height:269px ; border-radius: 120px">
-  <button id="welcomeaboardthedreamyexpresscloseButton">X</button>
      <div id="welcomeaboardthedreamyexpress" styles="width:2400px height=24 ">
+       <button id="welcomeaboardthedreamyexpresscloseButton">X</button>
       <div id="Aboardthedreamyexppressheader">Tickets please!</div> 
       <!-- Note to self! : This is supposed to be ( pressable ) aka there is supposed to be a button here. -->
       <p style="color:#9370DB">Welcome Aboard the Dreamy express!</p>
@@ -98,6 +102,17 @@
         <h1 style="margin: 4px;">Cosmically divine, gifted by the stars </h1> 
         <h4 style="color:#9370DB">And the Universe said you are love </h4>
      </div>
+     </div>
+
+     <script>
+    const welcomeaboardthedreamyexpresscloseButton = document.getElementById('welcomeaboardthedreamyexpresscloseButton');
+const welcomeaboardthedreamyexpress = document.getElementById('welcomeaboardthedreamyexpress');
+const Aboardthedreamyexppressheader = document.getElementById('Aboardthedreamyexppressheader');
+ 
+welcomeaboardthedreamyexpresscloseButton.addEventListener('click', function () {
+  welcomeaboardthedreamyexpress.style.display = 'none';
+});
+    </script>
 
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -225,9 +240,9 @@ input[type=text] {
       <!-- Note to self! : This is supposed to be ( pressable ) aka there is supposed to be a button here. -->
       
         <!-- Note to self! : Add DreamJelly cookkie sprite and name and talkcard thing here. Make Dreamjelly first foorm then pooof! 4th form! -->
-         <img src="https://64.media.tumblr.com/e646b71c0c4796bf8207c680f67eb706/df3a0a6a204983dc-da/s2048x3072/a192caf751bc2c8a5d131dc30f36f5ff3bc1026f.pnj"/>
+         <img src="https://64.media.tumblr.com/e646b71c0c4796bf8207c680f67eb706/df3a0a6a204983dc-da/s2048x3072/a192caf751bc2c8a5d131dc30f36f5ff3bc1026f.pnj"width="fit-content "height="fit-content "alt="Fixed Size Image"/>
         <img src="https://cdn.wikimg.net/en/cookierunwiki/images/6/6c/Crob_dreamjelly_smile.png"width="fit-content "height="fit-content "alt="Fixed Size Image"/> 
-     <div style="border:#6a627a solid; width:1600px height=200px ; border-radius: 1200px">
+     <div style="border:#6a627a solid; width:fit-content ; height:fit-content ; border-radius: 1200px">
         <h2 style =" color:rgb(255, 250, 223)"> DreamJelly Cookie : I wanna share some Rainbow bearroll jellies with you! </h2>
       <img src="https://64.media.tumblr.com/325429e1c5abc422dad88ca755ad1ffe/6d941bf247f64aa2-b9/s2048x3072/bb4014273fd0bac7d46e98dfed406c1205ca1485.pnj"width="fit-content "height="fit-content "alt="Fixed Size Image"/>
 
@@ -1029,9 +1044,12 @@ AboutmecloseButton.addEventListener('click', function () {
 
      <!-- Note to self! : Special Thanks divider DIV. -->
       <!-- Note to self! : Draggable DIV That is also a popout. -->
-     <div id="SPECIALTHANKS" styles="width:2400px height 24px"> 
-       <h7> SPECIAL THANKS SECTION 
-(like every good game or thing does ) </h7>
+     <div id="SPECIALTHANKS" style="width:2400px height:24px"> 
+     
+     <div id="SPECIALTHANKSheader" style="2400px ; height:fit-content">
+     <h7> SPECIAL THANKS SECTION  </h7>
+     <button id="SPECIALTHANKScloseButton">X</button>     
+       
 <p><button onclick="ThankyouandgoodbyeFunction()">Click Me</button></p>
 
 <div id="SpecialThanksDIV">Thank you to my best friends and that one person who helped me in that one zoom meeting, and to everyone at Stardance Team!</div>
@@ -1046,6 +1064,103 @@ function ThankyouandgoodbyeFunction() {
   }
 }
 </script>
+    <style>
+ #SPECIALTHANKS {
+  position: absolute;
+  z-index: 9;
+  background-color: #fff;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+  padding:4px;
+}
+
+#SPECIALTHANKSheader {
+  padding: 10px;
+  cursor: move;
+  z-index: 10;
+  background-color: #7044bb;
+  color: #fff;
+}
+
+#SpecialThanksDIV {
+  padding: 39px;
+  cursor: move;
+  z-index: 10;
+  background-color: #c7a7ff;
+  color: #fff;
+}
+#SPECIALTHANKScloseButton {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+</style> 
+
+<script>
+    const SPECIALTHANKScloseButton = document.getElementById('SPECIALTHANKScloseButton');
+const SPECIALTHANKS = document.getElementById('SPECIALTHANKS');
+const SpecialThanksDIV = document.getElementById('SpecialThanksDIV');
+const SPECIALTHANKSheader = document.getElementById('SPECIALTHANKSheader');
+ 
+SPECIALTHANKScloseButton.addEventListener('click', function () {
+  SPECIALTHANKS.style.display = 'none';
+});
+    </script>
+    <script>
+//SPECIAL THANKS :
+dragElement(document.getElementById("SPECIALTHANKS"));
+
+function dragElement(element) {
+
+  var initialX = 0;
+  var initialY = 0;
+  var currentX = 0;
+  var currentY = 0;
+
+  if (document.getElementById(element.id + "header")) {
+
+    document.getElementById(element.id + "header").onmousedown = startDragging;
+  } else {
+
+    element.onmousedown = startDragging;
+  }
+
+
+  function startDragging(e) {
+    e = e || window.event;
+    e.preventDefault();
+
+    initialX = e.clientX;
+    initialY = e.clientY;
+
+    document.onmouseup = stopDragging;
+    document.onmousemove = dragElement;
+  }
+
+
+  function dragElement(e) {
+    e = e || window.event;
+    e.preventDefault();
+
+    currentX = initialX - e.clientX;
+    currentY = initialY - e.clientY;
+    initialX = e.clientX;
+    initialY = e.clientY;
+
+    element.style.top = (element.offsetTop - currentY) + "px";
+    element.style.left = (element.offsetLeft - currentX) + "px";
+  }
+
+  function stopDragging() {
+    document.onmouseup = null;
+    document.onmousemove = null;
+  }
+}
+
+
+</script>
+</div>
+</div>
                <!-- Draggable DIV -->
         <!-- Note to self! : Add pictures and LAST GOODBYE MUSIC PLAYS BAM BAMMM DUMMBDUMMAMMMM BUUDAHGUNMMMNMMBAMMM -->
          <!-- Note to self! : AAdd pictures of my friends in draawings, stardusters from teh Stardance Team, and teh one person who helped me tho I forgott tehriusername lamao  -->
@@ -1059,24 +1174,6 @@ function ThankyouandgoodbyeFunction() {
       <p>Most images are directly linked to the Cookie Run Wiki.</p>
       <p>Pages linked </p>
     </div>  
-    <style>
-          #SPECIALTHANKS {
-  position: absolute;
-  z-index: 9;
-  background-color: #f1f1f1;
-  border: 1px solid #d3d3d3;
-  text-align: center;
-  padding:4px;
-}
-
-#SpecialThanksDIV {
-  padding: 39px;
-  cursor: move;
-  z-index: 10;
-  background-color: #c7a7ff;
-  color: #fff;
-}
-</style> 
 
     
     <script> 
@@ -1164,60 +1261,6 @@ function dragElement(elmnt) {
   }
 }
 </script>
-<script>
-//Banners and notifications and general settings :
-dragElement(document.getElementById("Bannersnotifandreminders"));
-
-function dragElement(element) {
-
-  var initialX = 0;
-  var initialY = 0;
-  var currentX = 0;
-  var currentY = 0;
-
-  if (document.getElementById(element.id + "header")) {
-
-    document.getElementById(element.id + "header").onmousedown = startDragging;
-  } else {
-
-    element.onmousedown = startDragging;
-  }
-
-
-  function startDragging(e) {
-    e = e || window.event;
-    e.preventDefault();
-
-    initialX = e.clientX;
-    initialY = e.clientY;
-
-    document.onmouseup = stopDragging;
-    document.onmousemove = dragElement;
-  }
-
-
-  function dragElement(e) {
-    e = e || window.event;
-    e.preventDefault();
-
-    currentX = initialX - e.clientX;
-    currentY = initialY - e.clientY;
-    initialX = e.clientX;
-    initialY = e.clientY;
-
-    element.style.top = (element.offsetTop - currentY) + "px";
-    element.style.left = (element.offsetLeft - currentX) + "px";
-  }
-
-  function stopDragging() {
-    document.onmouseup = null;
-    document.onmousemove = null;
-  }
-}
-
-
-</script>
-    
 
      <script src="1script.js"></script>
   <script type="module" src="./script.js"></script>
@@ -1230,5 +1273,6 @@ function dragElement(element) {
      
     </body>
 </html>
+
 
 
