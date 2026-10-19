@@ -7,7 +7,7 @@
 <body>
 <style>
 body{
-  background-image: https://cdn.wikimg.net/en/cookierunwiki/images/d/d0/Crob_lobby_fantastical_stardust_platform.png ; 
+  background-image:https://cdn.wikimg.net/en/cookierunwiki/images/d/d0/Crob_lobby_fantastical_stardust_platform.png;
   background-repeat: no-repeat;
   background-attachment: fixed;  
   background-size: auto;
@@ -130,17 +130,46 @@ welcomeaboardthedreamyexpresscloseButton.addEventListener('click', function () {
   margin-bottom: 25px;
 }
 </style>
-
 </div>
+    
+
+
      <!-- Note to self! : Draggable DIV : DreamJelly cookie's introduction -->
-<div>
-<div id="DreamJellyCookieWelcomesyou" styles="width:1800px; height=fit-content; ">
+      <style>
+          #DreamJellyCookieWelcomesyou {
+  position: absolute;
+  z-index: 9;
+  background-color: #f1f1f1;
+  border: 1px solid #d3d3d3;
+  text-align: center;
+}
+
+#DreamJellyCookieWelcomesyouheader {
+  cursor: move;
+  z-index: 9;
+background: #ff4545;
+background: linear-gradient(90deg, rgba(255, 69, 69, 1) 0%, rgba(255, 175, 140, 1) 14%, rgba(251, 167, 104, 1) 18%, rgba(255, 191, 112, 1) 25%, rgba(255, 238, 110, 1) 32%, rgba(255, 240, 140, 1) 37%, rgba(217, 255, 112, 1) 47%, rgba(157, 255, 133, 1) 56%, rgba(179, 255, 209, 1) 61%, rgba(138, 255, 253, 1) 68%, rgba(140, 221, 255, 1) 71%, rgba(143, 193, 255, 1) 74%, rgba(124, 112, 250, 1) 85%, rgba(124, 94, 255, 1) 88%, rgba(255, 145, 235, 1) 100%);
+border:#FFFFFF;
+padding:15px;
+}
+
+#DreamJellyCookieWelcomesyoucloseButton {
+  position: absolute;
+  top: 5px;
+  right: 25px;
+  width:20px;
+  height:20px;
+background: #a6fffe;
+background: linear-gradient(90deg, rgba(166, 255, 254, 1) 19%, rgba(255, 246, 143, 1) 44%, rgba(255, 181, 241, 1) 100%);
+border-color:#FFE37D;
+
+}
+</style> 
+<div class="content">
+<div id="DreamJellyCookieWelcomesyou" styles="width:1800px; height:fit-content; ">
         <button id="DreamJellyCookieWelcomesyoucloseButton">X</button>
      <div id="DreamJellyCookieWelcomesyouheader" style="width:1800px; height:30px; ">
-
-    
-     </div>
-     <div class="content">
+     
       <!-- Note to self! : This is supposed to be ( pressable ) aka there is supposed to be a button here. -->
       
         <!-- Note to self! : Add DreamJelly cookkie sprite and name and talkcard thing here. Make Dreamjelly first foorm then pooof! 4th form! -->
@@ -158,36 +187,9 @@ welcomeaboardthedreamyexpresscloseButton.addEventListener('click', function () {
       <img src="https://64.media.tumblr.com/538cd74a1a7e1d710d375d5a4ca0b6c5/df3a0a6a204983dc-e5/s2048x3072/6cba5872c703d59859410e430638382e7c03bc4e.pnj"width="1386px; "height="93px; "alt="Fixed Size Image; "/>
       <!-- Note to self! :bannerr thing -->
      </div>
-
+</div>
     </div>
 
- <style>
-          #DreamJellyCookieWelcomesyou {
-  position: absolute;
-  z-index: 9;
-  background-color: #f1f1f1;
-  border: 1px solid #d3d3d3;
-  text-align: center;
-}
-
-#DreamJellyCookieWelcomesyouheader {
-  cursor: move;
-  z-index: 9;
-  background-color: #7044bb;
-  color: #fff;
-}
-
-#DreamJellyCookieWelcomesyoucloseButton {
-  position: absolute;
-  top: 5px;
-  right: 25px;
-  width:20px;
-  height:20px;
-  color:#3a3b3e;
-  background-color:rgb(255, 232, 142);
-
-}
-</style> 
 <script>
 
 // DreamJelly Cookie's Welcomes you!!! :
@@ -226,30 +228,23 @@ function dragElement(elmnt) {
     document.onmousemove = null;
   }
 }
-
-var DreamJellyCookieWelcomesyouheader = document.querySelector("#DreamJellyCookieWelcomesyouheader")
-function closeWindow(element) {
-  element.style.display = "none"
-  function openWindow(element) {
-  element.style.display = "flex"
-  
-}
-}
 </script>
      <script>
-      const DreamJellyCookieWelcomesyoucloseButton = document.getElementById('DreamJellyCookieWelcomesyoucloseButton');
-      const DreamJellyCookieWelcomesyou = document.getElementById('DreamJellyCookieWelcomesyou');
-      const DreamJellyCookieWelcomesyouheader = document.getElementById('DreamJellyCookieWelcomesyouheader');
+    const DreamJellyCookieWelcomesyoucloseButton = document.getElementById('DreamJellyCookieWelcomesyoucloseButton');
+const DreamJellyCookieWelcomesyou = document.getElementById('DreamJellyCookieWelcomesyou');
+const DreamJellyCookieWelcomesyouheader = document.getElementById('DreamJellyCookieWelcomesyouheader');
  
 DreamJellyCookieWelcomesyoucloseButton.addEventListener('click', function () {
   DreamJellyCookieWelcomesyou.style.display = 'none';
 });
     </script>
-</div>
-</div>
-    
 
-      <!-- Note to self! :DrreamyExpressbrowserDiv starts here, from teh style.  -->
+
+
+
+
+
+      <!-- Note to self! :DrreamyExpressbrowserDiv starts here, from the style.  -->
  <div>
 
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -1105,7 +1100,7 @@ AboutmecloseButton.addEventListener('click', function () {
 
      <!-- Note to self! : Special Thanks divider DIV. -->
       <!-- Note to self! : Draggable DIV That is also a popout. -->
-     <div id="SPECIALTHANKS" style="width:2400px; height:24px;"> 
+     <div id="SPECIALTHANKS" style="width:fit-content; height:fit-content;"> 
      
      <div id="SPECIALTHANKSheader" style="width:2400px ; height:fit-content;">
      <h7> SPECIAL THANKS SECTION  </h7>
